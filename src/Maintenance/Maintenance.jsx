@@ -1,6 +1,6 @@
-import { Row } from "react-bootstrap";
 import Klink from '../images/Klink.png';
 import './Maintenance.css';
+import '../Global.css';
 
 function Maintenance() {
   return (

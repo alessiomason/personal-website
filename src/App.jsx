@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import PageLayout from './PageLayout';
 import Home from './Home';
 import Maintenance from './Maintenance/Maintenance';
+import Secret from './Secret';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App2() {
   return (
     <Routes>
       <Route path='/' element={<PageLayout />}>
-        <Route index element={process.env.REACT_APP_IN_MAINTENANCE === 'true' ? <Maintenance /> : <Home />} />
+        <Route index element={<Maintenance />} />
+        <Route path='secret' element={<Secret />} />
       </Route>
     </Routes>
   )
