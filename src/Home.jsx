@@ -1,9 +1,11 @@
+import { useEffect, useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import ReactPageScroller from 'react-page-scroller';
-import { ArrowDownSquare, ArrowDownCircle, ArrowDown } from 'react-bootstrap-icons';
+import { ArrowDown } from 'react-bootstrap-icons';
 import './Global.css';
 import './Home.css';
 import ProfilePicture from './images/profile_picture.jpeg';
+const dayjs = require('dayjs');
 
 function Home() {
   return (
@@ -27,7 +29,51 @@ function FirstHomeSlide() {
         </Col>
       </Row>
 
+      <PieceOfCode />
+
       <ArrowDown className='arrow-down' />
+    </div>
+  );
+}
+
+function PieceOfCode() {
+  const [dirty, setDirty] = useState(false);
+  const [time, setTime] = useState(dayjs().format());
+  const [spinner, setSpinner] = useState('|');
+
+  useEffect(() => {
+    setInterval(() => {
+      setDirty(true);
+    }, 100)
+  }, [])
+
+  useEffect(() => {
+    if (dirty) {
+      setTime(dayjs().format());
+
+      setSpinner(currentSpinner => {
+        switch (currentSpinner) {
+          case '|':
+            return '/';
+          case '/':
+            return '-';
+          case '-':
+            return '\\';
+          case '\\':
+          default:
+            return '|';
+        }
+      })
+
+      setDirty(false);
+    }
+  }, [dirty])
+
+  return (
+    <div className='code'>
+      <p className='text-end no-padding primary-yellow'>const dayjs = require('dayjs');</p>
+      <p className='text-end no-padding primary-yellow'>dayjs().format()</p>
+      <p className='text-end no-padding primary-yellow'>{spinner} {time}</p>
     </div>
   );
 }

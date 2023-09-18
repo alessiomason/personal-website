@@ -18,6 +18,13 @@
     border: 2px solid var(--primary-yellow);
 }
 
+.code {
+    font-family: monospace;
+    position: fixed;
+    right: 40px;
+    top: 40px;
+}
+
 @keyframes arrow-slide-down {
     0% {
         transform: translateY(-5vh);
