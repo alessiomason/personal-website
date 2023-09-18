@@ -14,7 +14,7 @@ function Maintenance() {
       </div>
 
       <div>
-        <h4 className="text-center">This website is currently under maintenance. Check back later!</h4>
+        <h4 className="text-center">This website is currently under construction. Check back later!</h4>
       </div>
     </div>
   )
