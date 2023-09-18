@@ -4,7 +4,7 @@ import '../Global.css';
 
 function Maintenance() {
   return (
-    <div className="d-flex flex-column justify-content-center full-screen">
+    <div className="d-flex flex-column justify-content-center full-screen-slide">
       <div className="d-flex center-row no-padding">
         <img src={Klink} className="klink" alt="loading" />
       </div>
@@ -17,7 +17,7 @@ function Maintenance() {
         <h4 className="text-center">This website is currently under construction. Check back later!</h4>
       </div>
     </div>
-  )
+  );
 }
 
 export default Maintenance;

@@ -10,18 +10,18 @@ function App() {
       <Router>
           <App2 />
       </Router>
-  )
+  );
 }
 
 function App2() {
   return (
     <Routes>
       <Route path='/' element={<PageLayout />}>
-        <Route index element={<Maintenance />} />
+        <Route index element={<Home />} />
         <Route path='secret' element={<Secret />} />
       </Route>
     </Routes>
-  )
+  );
 }
 
 export default App;
