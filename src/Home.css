@@ -9,6 +9,10 @@
 
 .second-home-slide {
     background-color: var(--navy-blue);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .profile-picture {
@@ -16,6 +20,24 @@
     height: 25vh;
     border-radius: 50%;
     border: 2px solid var(--primary-yellow);
+}
+
+.works-image {
+    height: 40vh;
+}
+
+.justify-text {
+    text-align: justify !important;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-yellow);
+    margin-left: 10px;
+}
+
+a:hover {
+    color: var(--dark-yellow);
 }
 
 .code {
@@ -49,7 +71,7 @@
 
     transform: translateY(-5vh);
     opacity: 0;
-    animation: arrow-slide-down 1.5s ease-out 1s 1 normal forwards;
+    animation: arrow-slide-down 1.5s ease-out 2s 1 normal forwards;
 }
 
 .arrow-down:hover {
@@ -95,4 +117,23 @@
     animation: wave 2.1s 0.6s 3;
     transform-origin: 75% 75%;
     display: inline-block;
+}
+
+.transparent {
+    opacity: 0;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.flicker-animation {
+    opacity: 0;
+    animation: flicker 0.05s linear 2s 7 alternate forwards;
 }

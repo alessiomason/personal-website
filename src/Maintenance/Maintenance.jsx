@@ -1,4 +1,4 @@
-import Klink from '../images/Klink.png';
+import Klink from '../images/klink.png';
 import './Maintenance.css';
 import '../Global.css';
 
