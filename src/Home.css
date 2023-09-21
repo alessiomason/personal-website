@@ -8,7 +8,15 @@
 }
 
 .second-home-slide {
+    /* background-color: var(--opaque-blue);
+    background-image: linear-gradient(var(--mid-blue) 1px, transparent 1px), linear-gradient(to right, var(--mid-blue) 1px, var(--opaque-blue) 1px);
+    background-size: 100px 100px; */
+
+    /* Pattern generated with https://www.magicpattern.design/tools/css-backgrounds */
     background-color: var(--navy-blue);
+    background-size: 100px 100px;
+    background-image: repeating-linear-gradient(45deg, var(--dark-blue) 0, var(--dark-blue) 1px, var(--navy-blue) 0, var(--navy-blue) 50%);
+
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 20px;
@@ -33,11 +41,18 @@
 a {
     text-decoration: none;
     color: var(--primary-yellow);
-    margin-left: 10px;
 }
 
 a:hover {
     color: var(--dark-yellow);
+}
+
+.text-decorate-link {
+    text-decoration: underline;
+}
+
+.web-icon {
+    margin-right: 10px;
 }
 
 .code {
@@ -79,6 +94,30 @@ a:hover {
     cursor: pointer;
 }
 
+/* Custom bullet points */
+
+ul {
+    padding-left: 20px;
+}
+
+.first-ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.first-li {
+    margin-top: 10px;
+}
+
+.list-icon {
+    margin-right: 5px;
+}
+
+/* Waving hand animation */
+
 @keyframes wave {
     0% {
         transform: rotate(0deg);
@@ -119,6 +158,35 @@ a:hover {
     display: inline-block;
 }
 
+/* Waiting icon animation */
+
+@keyframes wait-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    40% {
+        transform: rotate(180deg);
+    }
+
+    60% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.waiting-icon {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: xx-large;
+    animation: wait-rotate 1s 5;
+}
+
+/* Flicker animation */
+
 .transparent {
     opacity: 0;
 }
@@ -136,4 +204,41 @@ a:hover {
 .flicker-animation {
     opacity: 0;
     animation: flicker 0.05s linear 2s 7 alternate forwards;
+}
+
+/* Animation of the border line going around the box */
+/* Derived from https://stackoverflow.com/a/67773907/11024409 */
+
+@keyframes rotate {
+    0% {
+        --angle: 0%;
+    }
+
+    100% {
+        --angle: 100%;
+    }
+}
+
+@property --angle {
+    syntax: '<percentage>';
+    initial-value: 0%;
+    inherits: false;
+}
+
+.border-line-around-animation {
+    background-color: var(--opaque-blue);
+    padding-top: 10px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    --angle: 100%;
+    border: 2px solid;
+    border-image: conic-gradient(transparent var(--angle), var(--primary-yellow) 0 100%) 1;
+    animation: rotate 20s linear 3s 1 reverse forwards;
+}
+
+/* Firefox does not support this animation, set the angle to at least show the border permanently */
+@supports(-moz-appearance: none) {
+    .border-line-around-animation {
+        --angle: 0%;
+    }
 }
