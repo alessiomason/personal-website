@@ -10,7 +10,7 @@ function Maintenance() {
       </div>
 
       <div>
-        <h2 className='text-center primary-yellow'>A</h2>
+        <h2 className='text-center primary-yellow'>Alessio Mason</h2>
       </div>
 
       <div>
