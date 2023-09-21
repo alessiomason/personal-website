@@ -1,8 +1,244 @@
-.full-screen-component {
-    height: 100%;
-    width: 100%;
+@import url(./Colors.css);
+
+.first-home-slide {
+    background-color: var(--opaque-blue);
+    background-image: url("./images/background-1.png");
+    background-size: cover;
+    background-position: center;
 }
 
-.first-home-page {
-	background-color: aliceblue;
+.second-home-slide {
+    /* background-color: var(--opaque-blue);
+    background-image: linear-gradient(var(--mid-blue) 1px, transparent 1px), linear-gradient(to right, var(--mid-blue) 1px, var(--opaque-blue) 1px);
+    background-size: 100px 100px; */
+
+    /* Pattern generated with https://www.magicpattern.design/tools/css-backgrounds */
+    background-color: var(--navy-blue);
+    background-size: 100px 100px;
+    background-image: repeating-linear-gradient(45deg, var(--dark-blue) 0, var(--dark-blue) 1px, var(--navy-blue) 0, var(--navy-blue) 50%);
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.profile-picture {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 50%;
+    border: 2px solid var(--primary-yellow);
+}
+
+.works-image {
+    height: 40vh;
+}
+
+.justify-text {
+    text-align: justify !important;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-yellow);
+}
+
+a:hover {
+    color: var(--dark-yellow);
+}
+
+.text-decorate-link {
+    text-decoration: underline;
+}
+
+.web-icon {
+    margin-right: 10px;
+}
+
+.code {
+    font-family: monospace;
+    position: fixed;
+    right: 40px;
+    top: 40px;
+}
+
+@keyframes arrow-slide-down {
+    0% {
+        transform: translateY(-5vh);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.arrow-down {
+    position: fixed;
+    bottom: 30px;
+    left: 50vw;
+    right: 50vw;
+    width: 4vh;
+    height: 4vh;
+    margin-left: -2vh;
+    color: var(--primary-yellow);
+
+    transform: translateY(-5vh);
+    opacity: 0;
+    animation: arrow-slide-down 1.5s ease-out 2s 1 normal forwards;
+}
+
+.arrow-down:hover {
+    color: #fad000;
+    cursor: pointer;
+}
+
+/* Custom bullet points */
+
+ul {
+    padding-left: 20px;
+}
+
+.first-ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.first-li {
+    margin-top: 10px;
+}
+
+.list-icon {
+    margin-right: 5px;
+}
+
+/* Waving hand animation */
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(16deg);
+    }
+
+    20% {
+        transform: rotate(-6deg);
+    }
+
+    30% {
+        transform: rotate(16deg);
+    }
+
+    40% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(16deg);
+    }
+
+    60% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.waving-hand {
+    animation: wave 2.1s 0.6s 3;
+    transform-origin: 75% 75%;
+    display: inline-block;
+}
+
+/* Waiting icon animation */
+
+@keyframes wait-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    40% {
+        transform: rotate(180deg);
+    }
+
+    60% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.waiting-icon {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: xx-large;
+    animation: wait-rotate 1s 5;
+}
+
+/* Flicker animation */
+
+.transparent {
+    opacity: 0;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.flicker-animation {
+    opacity: 0;
+    animation: flicker 0.05s linear 2s 7 alternate forwards;
+}
+
+/* Animation of the border line going around the box */
+/* Derived from https://stackoverflow.com/a/67773907/11024409 */
+
+@keyframes rotate {
+    0% {
+        --angle: 0%;
+    }
+
+    100% {
+        --angle: 100%;
+    }
+}
+
+@property --angle {
+    syntax: '<percentage>';
+    initial-value: 0%;
+    inherits: false;
+}
+
+.border-line-around-animation {
+    background-color: var(--opaque-blue);
+    padding-top: 10px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    --angle: 100%;
+    border: 2px solid;
+    border-image: conic-gradient(transparent var(--angle), var(--primary-yellow) 0 100%) 1;
+    animation: rotate 20s linear 3s 1 reverse forwards;
+}
+
+/* Firefox does not support this animation, set the angle to at least show the border permanently */
+@supports(-moz-appearance: none) {
+    .border-line-around-animation {
+        --angle: 0%;
+    }
 }
