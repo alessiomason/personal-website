@@ -1,11 +1,4 @@
-@import url(./Colors.css);
-
-.first-home-slide {
-    background-color: var(--opaque-blue);
-    background-image: url("./images/background-1.png");
-    background-size: cover;
-    background-position: center;
-}
+@import url(../Colors.css);
 
 .second-home-slide {
     /* background-color: var(--opaque-blue);
@@ -21,17 +14,6 @@
     padding-bottom: 30px;
     padding-left: 20px;
     padding-right: 20px;
-}
-
-.profile-picture {
-    width: 25vh;
-    height: 25vh;
-    border-radius: 50%;
-    border: 2px solid var(--primary-yellow);
-}
-
-.works-image {
-    height: 40vh;
 }
 
 .justify-text {
@@ -55,45 +37,6 @@ a:hover {
     margin-right: 10px;
 }
 
-.code {
-    font-family: monospace;
-    position: fixed;
-    right: 40px;
-    top: 40px;
-}
-
-@keyframes arrow-slide-down {
-    0% {
-        transform: translateY(-5vh);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.arrow-down {
-    position: fixed;
-    bottom: 30px;
-    left: 50vw;
-    right: 50vw;
-    width: 4vh;
-    height: 4vh;
-    margin-left: -2vh;
-    color: var(--primary-yellow);
-
-    transform: translateY(-5vh);
-    opacity: 0;
-    animation: arrow-slide-down 1.5s ease-out 2s 1 normal forwards;
-}
-
-.arrow-down:hover {
-    color: #fad000;
-    cursor: pointer;
-}
-
 /* Custom bullet points */
 
 ul {
@@ -114,48 +57,6 @@ li {
 
 .list-icon {
     margin-right: 5px;
-}
-
-/* Waving hand animation */
-
-@keyframes wave {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    10% {
-        transform: rotate(16deg);
-    }
-
-    20% {
-        transform: rotate(-6deg);
-    }
-
-    30% {
-        transform: rotate(16deg);
-    }
-
-    40% {
-        transform: rotate(-4deg);
-    }
-
-    50% {
-        transform: rotate(16deg);
-    }
-
-    60% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-.waving-hand {
-    animation: wave 2.1s 0.6s 3;
-    transform-origin: 75% 75%;
-    display: inline-block;
 }
 
 /* Waiting icon animation */
