@@ -17,3 +17,11 @@
 .primary-yellow {
 	color: var(--primary-yellow);
 }
+
+.animate {
+	animation-play-state: running;
+}
+
+.no-animate {
+	animation-play-state: paused !important;
+}

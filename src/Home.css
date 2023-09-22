@@ -182,14 +182,10 @@ li {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: xx-large;
-    animation: wait-rotate 1s 5;
+    animation: wait-rotate 1s 7;
 }
 
 /* Flicker animation */
-
-.transparent {
-    opacity: 0;
-}
 
 @keyframes flicker {
     0% {
@@ -233,7 +229,7 @@ li {
     --angle: 100%;
     border: 2px solid;
     border-image: conic-gradient(transparent var(--angle), var(--primary-yellow) 0 100%) 1;
-    animation: rotate 20s linear 3s 1 reverse forwards;
+    animation: rotate 1s linear 1 reverse forwards;
 }
 
 /* Firefox does not support this animation, set the angle to at least show the border permanently */
