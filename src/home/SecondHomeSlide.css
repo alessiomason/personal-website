@@ -59,6 +59,12 @@ li {
     margin-right: 5px;
 }
 
+.carousel-content {
+    height: 458px;
+    width: auto;
+    overflow: scroll;
+}
+
 /* Waiting icon animation */
 
 @keyframes wait-rotate {
@@ -99,6 +105,7 @@ li {
 }
 
 .flicker-animation {
+    margin-bottom: 10px;
     opacity: 0;
     animation: flicker 0.05s linear 2s 7 alternate forwards;
 }

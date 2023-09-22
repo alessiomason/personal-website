@@ -1,6 +1,10 @@
 ## ToDo
 - ~~Konami code~~
 - Home
+    - Ref e inView per ogni box
+    - Frecce non del carousel
+    - Titolo Interessi?
+- i18n
 - Pagina dei lavori
 - Privacy policy?
 - Secret page
