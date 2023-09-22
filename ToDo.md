@@ -4,6 +4,7 @@
     - Ref e inView per ogni box
     - Frecce non del carousel
     - Titolo Interessi?
+    - onClick freccia in basso
 - i18n
 - Pagina dei lavori
 - Privacy policy?
