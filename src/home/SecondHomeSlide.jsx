@@ -95,7 +95,7 @@ function WorksBox(props) {
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   return (
-    <Col sm={{ span: 4, offset: (isMobile ? 0 : 1) }} className={'border-line-around-animation ' + (props.inView ? 'animate' : 'no-animate') + (isMobile ? ' carousel-content' : '')}>
+    <Col sm={{ span: 4, offset: (isMobile ? 0 : 2) }} className={'border-line-around-animation ' + (props.inView ? 'animate' : 'no-animate') + (isMobile ? ' carousel-content' : '')}>
       <h3 className='text-center'>Lavori e progetti</h3>
       <span className='d-flex justify-content-center'><HourglassSplit className={'waiting-icon ' + (props.inView ? 'animate' : 'no-animate')} /></span>
       <p>Il sito è ancora parzialmente in costruzione: troverai presto alcuni dei miei lavori e progetti personali in una pagina dedicata.</p>
