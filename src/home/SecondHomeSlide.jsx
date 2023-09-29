@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Row, Col, Carousel } from 'react-bootstrap';
 import {
   Laptop, Phone, FiletypeJsx, Server, FiletypePhp, Apple, Android,
@@ -5,6 +6,7 @@ import {
 } from 'react-bootstrap-icons';
 import { useInView } from 'react-intersection-observer';
 import { useMediaQuery } from 'react-responsive';
+import { ArrowLeftCircleFill, ArrowRightCircleFill } from 'react-bootstrap-icons';
 import './SecondHomeSlide.css';
 
 function SecondHomeSlideDesktop() {
@@ -25,17 +27,41 @@ function SecondHomeSlideDesktop() {
 }
 
 function SecondHomeSlideMobile() {
-  const [ref, inView] = useInView({ threshold: 1, triggerOnce: true });
+  const maxSlide = 3;
+  const [index, setIndex] = useState(0);
+
+  function handleSelect(selectedIndex) {
+    setIndex(selectedIndex);
+  };
+
+  function handleArrowSelect(prevSlide) {
+    if (prevSlide) {
+      setIndex(prevIndex => ((prevIndex - 1 >= 0) ? prevIndex - 1 : 0));
+    } else {
+      setIndex(prevIndex => ((prevIndex + 1 < maxSlide) ? prevIndex + 1 : maxSlide));
+    }
+  }
 
   return (
     <div className='d-flex flex-column justify-content-between full-screen-slide second-home-slide primary-yellow'>
-      <>Padding element</>
-      <Carousel interval={null} wrap={false} indicators={false}>
-        <Carousel.Item><InterestsBox inView={inView} /></Carousel.Item>
-        <Carousel.Item><WorksBox inView={inView} /></Carousel.Item>
-      </Carousel>
+      <>&nbsp;</>
+      <div>
+        <Carousel activeIndex={index} onSelect={handleSelect} interval={null} wrap={false} indicators={false} controls={false}>
+          <Carousel.Item><WhoAmIMobile /></Carousel.Item>
+          <Carousel.Item><InterestsBox /></Carousel.Item>
+          <Carousel.Item><WorksBox /></Carousel.Item>
+        </Carousel>
+        <Row>
+          <Col className='d-flex justify-content-end align-items-center'>
+            <ArrowLeftCircleFill className={'carousel-arrow' + (index === 0 ? ' grayed-out' : '')} onClick={() => handleArrowSelect(true)} />
+          </Col>
+          <Col className='d-flex align-items-center'>
+            <ArrowRightCircleFill className={'carousel-arrow' + (index === maxSlide - 1 ? ' grayed-out' : '')} onClick={() => handleArrowSelect(false)} />
+          </Col>
+        </Row>
+      </div>
 
-      <AcrossTheWeb reference={ref} inView={inView} />
+      <AcrossTheWeb />
     </div>
   );
 }
@@ -51,11 +77,28 @@ function WhoAmIDesktop() {
   );
 }
 
-function InterestsBox(props) {
+function WhoAmIMobile() {
+  const [ref, inView] = useInView({ threshold: 0.2, triggerOnce: true });
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   return (
-    <Col sm={{ span: 4, offset: (isMobile ? 0 : 1) }} className={'border-line-around-animation ' + (props.inView ? 'animate' : 'no-animate') + (isMobile ? ' carousel-content' : '')}>
+    <Col md={{ span: 4, offset: 1 }} ref={ref} className={'border-line-around-animation ' + (inView ? 'animate' : 'no-animate') + (isMobile ? ' carousel-content' : '')}>
+      <h1>Chi sono</h1>
+      <p>Ho studiato Ingegneria informatica presso il Politecnico di Torino.</p>
+      <p>Nel tempo ho realizzato diverse applicazioni web e mobile:
+        su questo sito troverai presto alcuni dei miei lavori e progetti personali.</p>
+      <p>Scorri i riquadri per saperne di più!</p>
+      
+    </Col>
+  );
+}
+
+function InterestsBox() {
+  const [ref, inView] = useInView({ threshold: 0.2, triggerOnce: true });
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
+  return (
+    <Col md={{ span: 4, offset: 1 }} ref={ref} className={'border-line-around-animation ' + (inView ? 'animate' : 'no-animate') + (isMobile ? ' carousel-content' : '')}>
       <h3 className='text-center'>Interessi e competenze</h3>
       <ul className='first-ul'>
         <li className='first-li'><span className='d-flex align-items-center'><Laptop className='list-icon' />Applicazioni web</span>
@@ -68,7 +111,7 @@ function InterestsBox(props) {
 
         <li className='first-li'><span className='d-flex align-items-center'><Phone className='list-icon' />Applicazioni mobile</span>
           <ul>
-            <li><span className='d-flex align-items-center'><Apple className='list-icon' />Applicazioni iOS (Swift, SwiftUI)</span></li>
+            <li><span className='d-flex align-items-center'><Apple className='list-icon' />iOS (Swift, SwiftUI)</span></li>
             <li><span className='d-flex align-items-center'><Android className='list-icon' />Android (Kotlin, view-based o Jetpack Compose)</span></li>
           </ul>
         </li>
@@ -91,23 +134,27 @@ function InterestsBox(props) {
   );
 }
 
-function WorksBox(props) {
+function WorksBox() {
+  const [ref, inView] = useInView({ threshold: 0.2, triggerOnce: true });
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   return (
-    <Col sm={{ span: 4, offset: (isMobile ? 0 : 2) }} className={'border-line-around-animation ' + (props.inView ? 'animate' : 'no-animate') + (isMobile ? ' carousel-content' : '')}>
+    <Col md={{ span: 4, offset: 2 }} ref={ref} className={'border-line-around-animation ' + (inView ? 'animate' : 'no-animate') + (isMobile ? ' carousel-content' : '')}>
       <h3 className='text-center'>Lavori e progetti</h3>
-      <span className='d-flex justify-content-center'><HourglassSplit className={'waiting-icon ' + (props.inView ? 'animate' : 'no-animate')} /></span>
+      <span className='d-flex justify-content-center'><HourglassSplit className={'waiting-icon ' + (inView ? 'animate' : 'no-animate')} /></span>
       <p>Il sito è ancora parzialmente in costruzione: troverai presto alcuni dei miei lavori e progetti personali in una pagina dedicata.</p>
       <p>Su <a href='https://github.com/alessiomason' className='text-decorate-link'>GitHub</a> trovi alcuni dei miei progetti e (presto) anche il repository di questo stesso sito.</p>
     </Col>
   );
 }
 
-function AcrossTheWeb(props) {
+function AcrossTheWeb() {
+  const [ref, inView] = useInView({ threshold: 1, triggerOnce: true });
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
   return (
-    <div ref={props.reference} className={'flicker-animation ' + (props.inView ? 'animate' : 'no-animate')}>
-      <h3>In giro per il web (Across the Spider-Verse)</h3>
+    <div ref={ref} className={'flicker-animation ' + (inView || isMobile ? 'animate' : 'no-animate')}>
+      <h3>In giro per il web{/*(Across the Spider-Verse)*/}</h3>
       <div className='d-flex align-items-center'><Github className='web-icon' /><a href='https://github.com/alessiomason'>@alessiomason</a></div>
       <div className='d-flex align-items-center'><Mastodon className='web-icon' /><a href='https://livellosegreto.it/@alemason'>@alemason@livellosegreto.it</a></div>
     </div>

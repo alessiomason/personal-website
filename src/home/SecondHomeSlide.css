@@ -65,6 +65,24 @@ li {
     overflow: scroll;
 }
 
+.carousel-arrow {
+    margin-top: 15px;
+}
+
+.carousel-arrow.grayed-out {
+    color: rgba(255, 213, 0, 0.75);
+}
+
+.carousel-arrow:hover {
+    cursor: pointer;
+    color: var(--dark-yellow);
+}
+
+.carousel-arrow.carousel-arrow.grayed-out:hover {
+    cursor: default;
+    color: rgba(255, 213, 0, 0.75);
+}
+
 /* Waiting icon animation */
 
 @keyframes wait-rotate {
