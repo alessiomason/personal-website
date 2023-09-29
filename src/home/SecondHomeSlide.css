@@ -1,11 +1,4 @@
-@import url(./Colors.css);
-
-.first-home-slide {
-    background-color: var(--opaque-blue);
-    background-image: url("./images/background-1.png");
-    background-size: cover;
-    background-position: center;
-}
+@import url(../Colors.css);
 
 .second-home-slide {
     /* background-color: var(--opaque-blue);
@@ -21,17 +14,6 @@
     padding-bottom: 30px;
     padding-left: 20px;
     padding-right: 20px;
-}
-
-.profile-picture {
-    width: 25vh;
-    height: 25vh;
-    border-radius: 50%;
-    border: 2px solid var(--primary-yellow);
-}
-
-.works-image {
-    height: 40vh;
 }
 
 .justify-text {
@@ -53,45 +35,6 @@ a:hover {
 
 .web-icon {
     margin-right: 10px;
-}
-
-.code {
-    font-family: monospace;
-    position: fixed;
-    right: 40px;
-    top: 40px;
-}
-
-@keyframes arrow-slide-down {
-    0% {
-        transform: translateY(-5vh);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.arrow-down {
-    position: fixed;
-    bottom: 30px;
-    left: 50vw;
-    right: 50vw;
-    width: 4vh;
-    height: 4vh;
-    margin-left: -2vh;
-    color: var(--primary-yellow);
-
-    transform: translateY(-5vh);
-    opacity: 0;
-    animation: arrow-slide-down 1.5s ease-out 2s 1 normal forwards;
-}
-
-.arrow-down:hover {
-    color: #fad000;
-    cursor: pointer;
 }
 
 /* Custom bullet points */
@@ -116,46 +59,28 @@ li {
     margin-right: 5px;
 }
 
-/* Waving hand animation */
-
-@keyframes wave {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    10% {
-        transform: rotate(16deg);
-    }
-
-    20% {
-        transform: rotate(-6deg);
-    }
-
-    30% {
-        transform: rotate(16deg);
-    }
-
-    40% {
-        transform: rotate(-4deg);
-    }
-
-    50% {
-        transform: rotate(16deg);
-    }
-
-    60% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
+.carousel-content {
+    height: 458px;
+    width: auto;
+    overflow: scroll;
 }
 
-.waving-hand {
-    animation: wave 2.1s 0.6s 3;
-    transform-origin: 75% 75%;
-    display: inline-block;
+.carousel-arrow {
+    margin-top: 15px;
+}
+
+.carousel-arrow.grayed-out {
+    color: rgba(255, 213, 0, 0.75);
+}
+
+.carousel-arrow:hover {
+    cursor: pointer;
+    color: var(--dark-yellow);
+}
+
+.carousel-arrow.carousel-arrow.grayed-out:hover {
+    cursor: default;
+    color: rgba(255, 213, 0, 0.75);
 }
 
 /* Waiting icon animation */
@@ -182,14 +107,10 @@ li {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: xx-large;
-    animation: wait-rotate 1s 5;
+    animation: wait-rotate 1s 7;
 }
 
 /* Flicker animation */
-
-.transparent {
-    opacity: 0;
-}
 
 @keyframes flicker {
     0% {
@@ -202,6 +123,7 @@ li {
 }
 
 .flicker-animation {
+    margin-bottom: 10px;
     opacity: 0;
     animation: flicker 0.05s linear 2s 7 alternate forwards;
 }
@@ -233,7 +155,7 @@ li {
     --angle: 100%;
     border: 2px solid;
     border-image: conic-gradient(transparent var(--angle), var(--primary-yellow) 0 100%) 1;
-    animation: rotate 20s linear 3s 1 reverse forwards;
+    animation: rotate 1s linear 1 reverse forwards;
 }
 
 /* Firefox does not support this animation, set the angle to at least show the border permanently */

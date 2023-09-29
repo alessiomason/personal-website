@@ -1,6 +1,13 @@
 ## ToDo
 - ~~Konami code~~
 - Home
+    - ~~Ref e inView per ogni box~~
+    - ~~Frecce non del carousel~~
+    - Titolo Interessi?
+    - onClick freccia in basso
+    - PieceOfCode console.log(festività)
+    - Account Mastodon.social
+- i18n
 - Pagina dei lavori
 - Privacy policy?
 - Secret page
