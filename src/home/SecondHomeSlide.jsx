@@ -82,7 +82,7 @@ function WhoAmIMobile() {
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   return (
-    <Col md={{ span: 4, offset: 1 }} ref={ref} className={'border-line-around-animation ' + (inView ? 'animate' : 'no-animate') + (isMobile ? ' carousel-content' : '')}>
+    <Col md={{ span: 4, offset: 1 }} ref={ref} className={'border-line-around-animation ' + (inView ? 'started' : '') + (isMobile ? ' carousel-content' : '')}>
       <h1>Chi sono</h1>
       <p>Ho studiato Ingegneria informatica presso il Politecnico di Torino.</p>
       <p>Nel tempo ho realizzato diverse applicazioni web e mobile:
@@ -98,7 +98,7 @@ function InterestsBox() {
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   return (
-    <Col md={{ span: 4, offset: 1 }} ref={ref} className={'border-line-around-animation ' + (inView ? 'animate' : 'no-animate') + (isMobile ? ' carousel-content' : '')}>
+    <Col md={{ span: 4, offset: 1 }} ref={ref} className={'border-line-around-animation ' + (inView ? 'started' : '') + (isMobile ? ' carousel-content' : '')}>
       <h3 className='text-center'>Interessi e competenze</h3>
       <ul className='first-ul'>
         <li className='first-li'><span className='d-flex align-items-center'><Laptop className='list-icon' />Applicazioni web</span>
@@ -139,7 +139,7 @@ function WorksBox() {
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   return (
-    <Col md={{ span: 4, offset: 2 }} ref={ref} className={'border-line-around-animation ' + (inView ? 'animate' : 'no-animate') + (isMobile ? ' carousel-content' : '')}>
+    <Col md={{ span: 4, offset: 2 }} ref={ref} className={'border-line-around-animation ' + (inView ? 'started' : '') + (isMobile ? ' carousel-content' : '')}>
       <h3 className='text-center'>Lavori e progetti</h3>
       <span className='d-flex justify-content-center'><HourglassSplit className={'waiting-icon ' + (inView ? 'animate' : 'no-animate')} /></span>
       <p>Il sito è ancora parzialmente in costruzione: troverai presto alcuni dei miei lavori e progetti personali in una pagina dedicata.</p>

@@ -3,6 +3,7 @@
 - Home
     - ~~Ref e inView per ogni box~~
     - ~~Frecce non del carousel~~
+    - Pallini avanzamento carousel
     - Titolo Interessi?
     - onClick freccia in basso
     - PieceOfCode console.log(festività)

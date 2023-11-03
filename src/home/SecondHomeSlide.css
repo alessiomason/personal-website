@@ -128,39 +128,25 @@ li {
     animation: flicker 0.05s linear 2s 7 alternate forwards;
 }
 
-/* Animation of the border line going around the box */
-/* Derived from https://stackoverflow.com/a/67773907/11024409 */
-
-@keyframes rotate {
-    0% {
-        --angle: 0%;
-    }
-
-    100% {
-        --angle: 100%;
-    }
-}
-
-@property --angle {
-    syntax: '<percentage>';
-    initial-value: 0%;
-    inherits: false;
-}
+/* Animation of the border line building around the box */
+/* Derived from https://codepen.io/t_afif/pen/xxpRrOG */
 
 .border-line-around-animation {
-    background-color: var(--opaque-blue);
-    padding-top: 10px;
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-    --angle: 100%;
-    border: 2px solid;
-    border-image: conic-gradient(transparent var(--angle), var(--primary-yellow) 0 100%) 1;
-    animation: rotate 1s linear 1 reverse forwards;
+    background-color: var(--opaque-blue) !important;
+
+    --c: var(--primary-yellow); /* the border color */
+    --b: 2px; /* the border thickness*/
+    --g: 20px; /* the gap on hover */
+
+    padding: calc(var(--g) + var(--b));
+    --_g: #0000 25%, var(--c) 0;
+    background:
+        conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+        conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat;
+    transition: .3s, background-position .3s .3s;
 }
 
-/* Firefox does not support this animation, set the angle to at least show the border permanently */
-@supports(-moz-appearance: none) {
-    .border-line-around-animation {
-        --angle: 0%;
-    }
+.border-line-around-animation.started {
+    --_i: 100%;
+    transition: .3s, background-size .3s .3s;
 }
