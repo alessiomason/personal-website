@@ -2,7 +2,7 @@
 
 .first-home-slide {
 	background-color: var(--opaque-blue);
-	background-image: url("../images/background-1.png");
+	background-image: url("../images/background-1.jpg");
 	background-size: cover;
 	background-position: center;
 }
