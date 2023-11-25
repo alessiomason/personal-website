@@ -12,7 +12,10 @@
 - Pagina dei lavori
 - Privacy policy?
 - Secret page
-- Comprimere immagini
+- ~~Comprimere immagini~~
+- 404 page
+- Spostare citazioni?
+- Citazioni mobile
 
 ## Idee
 - Video background in home

@@ -1,0 +1,17 @@
+.random-quote {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	max-width: 50%;
+}
+
+.quote,
+.quoting {
+	margin-bottom: 0;
+	padding-left: 15px;
+	border-left: 2px solid var(--primary-yellow);
+}
+
+.quote {
+	font-style: italic;
+}

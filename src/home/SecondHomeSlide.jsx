@@ -154,7 +154,7 @@ function AcrossTheWeb() {
 
   return (
     <div ref={ref} className={'flicker-animation ' + (inView || isMobile ? 'animate' : 'no-animate')}>
-      <h3>In giro per il web{/*(Across the Spider-Verse)*/}</h3>
+      <h3>In giro per il web{/*Across the Spider-Verse (find me on the web)*/}</h3>
       <div className='d-flex align-items-center'><Github className='web-icon' /><a href='https://github.com/alessiomason'>@alessiomason</a></div>
       <div className='d-flex align-items-center'><Mastodon className='web-icon' /><a href='https://livellosegreto.it/@alemason'>@alemason@livellosegreto.it</a></div>
     </div>
