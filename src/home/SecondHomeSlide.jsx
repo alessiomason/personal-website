@@ -4,6 +4,7 @@ import {
   Laptop, Phone, FiletypeJsx, Server, FiletypePhp, Apple, Android,
   ListColumns, FiletypeJava, JournalCode, Database, Ethernet, ShieldCheck, HourglassSplit, Github, Mastodon
 } from 'react-bootstrap-icons';
+import { Threads } from '../new-bootstrap-icons/Threads';
 import { useInView } from 'react-intersection-observer';
 import { useMediaQuery } from 'react-responsive';
 import { ArrowLeftCircleFill, ArrowRightCircleFill } from 'react-bootstrap-icons';
@@ -88,7 +89,7 @@ function WhoAmIMobile() {
       <p>Nel tempo ho realizzato diverse applicazioni web e mobile:
         su questo sito troverai presto alcuni dei miei lavori e progetti personali.</p>
       <p>Scorri i riquadri per saperne di più!</p>
-      
+
     </Col>
   );
 }
@@ -156,6 +157,7 @@ function AcrossTheWeb() {
     <div ref={ref} className={'flicker-animation ' + (inView || isMobile ? 'animate' : 'no-animate')}>
       <h3>In giro per il web{/*Across the Spider-Verse (find me on the web)*/}</h3>
       <div className='d-flex align-items-center'><Github className='web-icon' /><a href='https://github.com/alessiomason'>@alessiomason</a></div>
+      <div className='d-flex align-items-center'><Threads className='web-icon' /><a href='https://threads.net/mason_alessio'>@mason_alessio</a></div>
       <div className='d-flex align-items-center'><Mastodon className='web-icon' /><a href='https://mastodon.social/@alemason'>@alemason@mastodon.social</a></div>
     </div>
   );
