@@ -144,7 +144,8 @@ function WorksBox() {
       <h3 className='text-center'>Lavori e progetti</h3>
       <span className='d-flex justify-content-center'><HourglassSplit className={'waiting-icon ' + (inView ? 'animate' : 'no-animate')} /></span>
       <p>Il sito è ancora parzialmente in costruzione: troverai presto alcuni dei miei lavori e progetti personali in una pagina dedicata.</p>
-      <p>Su <a href='https://github.com/alessiomason' className='text-decorate-link'>GitHub</a> trovi alcuni dei miei progetti e (presto) anche il repository di questo stesso sito.</p>
+      <p>Su <a href='https://github.com/alessiomason' className='text-decorate-link'>GitHub</a> trovi alcuni dei miei progetti
+      e anche il <a href='https://github.com/alessiomason/personal-website' className='text-decorate-link'>repository</a> di questo stesso sito.</p>
     </Col>
   );
 }
