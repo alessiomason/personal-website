@@ -6,8 +6,8 @@ function NotFoundPage() {
     const navigate = useNavigate();
 
     return (
-        <>
-            <Row className="mt-4 ms-4">
+        <div className="full-screen-slide not-found-page">
+            <Row className="mt-2 ms-2">
                 <h1 className="primary-yellow">Pagina non trovata!</h1>
                 <h5 className="primary-yellow">La pagina che stai cercando non esiste!</h5>
             </Row>
@@ -17,7 +17,7 @@ function NotFoundPage() {
                     <Button variant="warning" onClick={() => navigate("/")}>Torna alla home</Button>
                 </Col>
             </Row>
-        </>
+        </div>
     );
 }
 
