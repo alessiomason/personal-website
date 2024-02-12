@@ -1,8 +1,11 @@
 import {Col, Container, Row} from "react-bootstrap";
+import {useTranslation} from "react-i18next";
 import "./Flashword.css";
 import FlashwordIcon from "./images/Flashword_icon.png";
 
 function Flashword() {
+    const {t} = useTranslation();
+
     return (
         <Container>
             <Row>
@@ -13,13 +16,9 @@ function Flashword() {
 
             <Row>
                 <Col>
-                    <h1>Flashword</h1>
-                    <p>Flashword is the first app I developed!</p>
-                    <p>It started as a personal project to create something I personally needed. Every time I would learn
-                    a new word (maybe watching a film or TV series in English, or even some rare Italian word) I would
-                    look it up on my phone's dictionary, but then quickly forget it. So I decided to create a place
-                    where to store and revisit these words, so that I wouldn't forget them, and that's how the idea
-                    for Flashword came to be!</p>
+                    <h1>{t("flashword.app-name")}</h1>
+                    <p>{t("flashword.description.1")}</p>
+                    <p>{t("flashword.description.2")}</p>
                 </Col>
             </Row>
         </Container>

@@ -4,20 +4,23 @@ import I18nextBrowserLanguageDetector from "i18next-browser-languagedetector";
 import {homeIt, homeEn} from "./homeLocalizations";
 import {secretPageIt, secretPageEn} from "./secretPageLocalizations";
 import {maintenancePageIt, maintenancePageEn} from "./maintenancePageLocalizations";
+import {flashwordIt, flashwordEn} from "./apps/flashwordLocalizations";
 
 const resources = {
     it: {
         translation: {
             ...homeIt,
             ...secretPageIt,
-            ...maintenancePageIt
+            ...maintenancePageIt,
+            ...flashwordIt
         }
     },
     en: {
         translation: {
             ...homeEn,
             ...secretPageEn,
-            ...maintenancePageEn
+            ...maintenancePageEn,
+            ...flashwordEn
         }
     }
 }

@@ -1,8 +1,11 @@
 import {Col, Container, Row} from "react-bootstrap";
+import {useTranslation} from "react-i18next";
 import "./Flashword.css";
 import FlashwordIcon from "./images/Flashword_icon.png";
 
 function FlashwordPrivacyPolicy() {
+    const {t} = useTranslation();
+
     return (
         <Container>
             <Row>
@@ -13,9 +16,8 @@ function FlashwordPrivacyPolicy() {
 
             <Row>
                 <Col>
-                    <h1>Flashword's privacy policy</h1>
-                    <p>Flashword does not collect any data about you or the words or categories you save in the app.
-                    All data are saved locally and do not leave your device.</p>
+                    <h1>{t("flashword.privacy-policy.title")}</h1>
+                    <p>{t("flashword.privacy-policy.description")}</p>
                 </Col>
             </Row>
         </Container>
