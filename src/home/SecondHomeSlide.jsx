@@ -78,8 +78,8 @@ function WhoAmIDesktop() {
     return (
         <div>
             <h1>{t("who-am-i")}</h1>
-            <div className='justify-text'>{t("about-1")}</div>
-            <div className='justify-text'>{t("about-2")}</div>
+            <div className='justify-text'>{t("about.1")}</div>
+            <div className='justify-text'>{t("about.2")}</div>
         </div>
     );
 }
@@ -93,8 +93,8 @@ function WhoAmIMobile() {
         <Col md={{span: 4, offset: 1}} ref={ref}
              className={'border-line-around-animation ' + (inView ? 'started' : '') + (isMobile ? ' carousel-content' : '')}>
             <h1>{t("who-am-i")}</h1>
-            <div className='justify-text'>{t("about-1")}</div>
-            <div className='justify-text'>{t("about-2")}</div>
+            <div className='justify-text'>{t("about.1")}</div>
+            <div className='justify-text'>{t("about.2")}</div>
             <p>{t("scroll-to-know-more")}</p>
         </Col>
     );
@@ -110,42 +110,42 @@ function InterestsBox() {
              className={'border-line-around-animation ' + (inView ? 'started' : '') + (isMobile ? ' carousel-content' : '')}>
             <h3 className='text-center'>{t("interests")}</h3>
             <ul className='first-ul'>
-                <li className='first-li'><span className='d-flex align-items-center'><Laptop className='list-icon'/>{t("web-applications")}</span>
+                <li className='first-li'><span className='d-flex align-items-center'><Laptop className='list-icon'/>{t("web-applications.title")}</span>
                     <ul>
-                        <li><span className='d-flex align-items-center'><FiletypeJsx className='list-icon'/>{t("web-applications-front-end")}</span>
+                        <li><span className='d-flex align-items-center'><FiletypeJsx className='list-icon'/>{t("web-applications.front-end")}</span>
                         </li>
-                        <li><span className='d-flex align-items-center'><Server className='list-icon'/>{t("web-applications-back-end")}</span>
+                        <li><span className='d-flex align-items-center'><Server className='list-icon'/>{t("web-applications.back-end")}</span>
                         </li>
-                        <li><span className='d-flex align-items-center'><FiletypePhp className='list-icon'/>{t("web-applications-traditional")}</span>
+                        <li><span className='d-flex align-items-center'><FiletypePhp className='list-icon'/>{t("web-applications.traditional")}</span>
                         </li>
                     </ul>
                 </li>
 
-                <li className='first-li'><span className='d-flex align-items-center'><Phone className='list-icon'/>{t("mobile-applications")}</span>
+                <li className='first-li'><span className='d-flex align-items-center'><Phone className='list-icon'/>{t("mobile-applications.title")}</span>
                     <ul>
-                        <li><span className='d-flex align-items-center'><Apple className='list-icon'/>{t("mobile-applications-ios")}</span>
+                        <li><span className='d-flex align-items-center'><Apple className='list-icon'/>{t("mobile-applications.ios")}</span>
                         </li>
-                        <li><span className='d-flex align-items-center'><Android className='list-icon'/>{t("mobile-applications-android")}</span>
+                        <li><span className='d-flex align-items-center'><Android className='list-icon'/>{t("mobile-applications.android")}</span>
                         </li>
                     </ul>
                 </li>
 
                 <li className='first-li'><span className='d-flex align-items-center'><ListColumns
-                    className='list-icon'/>{t("system-programming")}</span>
+                    className='list-icon'/>{t("system-programming.title")}</span>
                     <ul>
-                        <li><span className='d-flex align-items-center'><FiletypeJava className='list-icon'/>{t("system-programming-languages")}</span>
+                        <li><span className='d-flex align-items-center'><FiletypeJava className='list-icon'/>{t("system-programming.languages")}</span>
                         </li>
                     </ul>
                 </li>
 
                 <li className='first-li'><span className='d-flex align-items-center'><JournalCode
-                    className='list-icon'/>{t("other-computer-sciences")}</span>
+                    className='list-icon'/>{t("other-computer-sciences.title")}</span>
                     <ul>
-                        <li><span className='d-flex align-items-center'><Database className='list-icon'/>{t("other-computer-sciences-db")}</span>
+                        <li><span className='d-flex align-items-center'><Database className='list-icon'/>{t("other-computer-sciences.db")}</span>
                         </li>
-                        <li><span className='d-flex align-items-center'><Ethernet className='list-icon'/>{t("other-computer-sciences-networks")}</span>
+                        <li><span className='d-flex align-items-center'><Ethernet className='list-icon'/>{t("other-computer-sciences.networks")}</span>
                         </li>
-                        <li><span className='d-flex align-items-center'><ShieldCheck className='list-icon'/>{t("other-computer-sciences-cybersecurity")}</span>
+                        <li><span className='d-flex align-items-center'><ShieldCheck className='list-icon'/>{t("other-computer-sciences.cybersecurity")}</span>
                         </li>
                     </ul>
                 </li>
@@ -162,11 +162,11 @@ function WorksBox() {
     return (
         <Col md={{span: 4, offset: 2}} ref={ref}
              className={'border-line-around-animation ' + (inView ? 'started' : '') + (isMobile ? ' carousel-content' : '')}>
-            <h3 className='text-center'>{t("works")}</h3>
+            <h3 className='text-center'>{t("works.title")}</h3>
             <span className='d-flex justify-content-center'><HourglassSplit
                 className={'waiting-icon ' + (inView ? 'animate' : 'no-animate')}/></span>
-            <p>{t("works-description-1")}</p>
-            <p><Trans i18nKey="works-description-2">Su <a href='https://github.com/alessiomason' className='text-decorate-link'>GitHub</a> trovi alcuni dei
+            <p>{t("works.description.1")}</p>
+            <p><Trans i18nKey="works.description.2">Su <a href='https://github.com/alessiomason' className='text-decorate-link'>GitHub</a> trovi alcuni dei
                 miei progetti
                 e anche il <a href='https://github.com/alessiomason/personal-website'
                               className='text-decorate-link'>repository</a> di questo stesso sito.</Trans></p>
