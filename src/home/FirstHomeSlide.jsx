@@ -1,12 +1,14 @@
 import {Row, Col} from 'react-bootstrap';
 import {ArrowDown} from 'react-bootstrap-icons';
 import {useMediaQuery} from 'react-responsive';
+import {useTranslation} from "react-i18next";
 import PieceOfCode from './PieceOfCode';
 import RandomQuote from './RandomQuote';
 import ProfilePicture from '../images/profile_picture.jpeg';
 import './FirstHomeSlide.css';
 
 function FirstHomeSlide() {
+    const {t} = useTranslation();
     const isMobile = useMediaQuery({maxWidth: 767});
 
     return (
@@ -19,10 +21,10 @@ function FirstHomeSlide() {
                     <img src={ProfilePicture} className='profile-picture' alt='profile-picture'/>
                 </Col>
                 <Col>
-                    <Row><h1 className={'primary-yellow ' + (isMobile ? 'text-center' : '')}>Ciao! <span
+                    <Row><h1 className={'primary-yellow ' + (isMobile ? 'text-center' : '')}>{t("hi")}<span
                         className='waving-hand'>👋</span></h1></Row>
-                    <Row><h4 className={'primary-yellow ' + (isMobile ? 'text-center' : '')}>Mi chiamo Alessio e sono un
-                        ingegnere informatico.</h4></Row>
+                    <Row><h4 className={'primary-yellow ' + (isMobile ? 'text-center' : '')}>{t("hi-subheadline")}</h4>
+                    </Row>
                 </Col>
             </Row>
 
