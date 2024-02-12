@@ -6,14 +6,14 @@
     - Pallini avanzamento carousel
     - Titolo Interessi?
     - onClick freccia in basso
-    - PieceOfCode console.log(festività)
-    - Account Mastodon.social
-- i18n
+    - ~~PieceOfCode console.log(festività)~~
+    - ~~Account Mastodon.social~~
+- ~~i18n~~
 - Pagina dei lavori
 - Privacy policy?
 - Secret page
 - ~~Comprimere immagini~~
-- 404 page
+- ~~404 page~~
 - Spostare citazioni?
 - Citazioni mobile
 
