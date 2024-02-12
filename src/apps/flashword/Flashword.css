@@ -5,10 +5,10 @@
     border-radius: 25px;
 }
 
-a {
+.blue-link {
     color: #00c7be;
 }
 
-a:hover {
+.blue-link:hover {
     color: #007aff;
 }

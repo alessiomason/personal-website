@@ -14,10 +14,10 @@ function FlashwordTermsOfUse() {
             <Row>
                 <Col>
                     <h1>Flashword's terms of use</h1>
-                    <p>Flashword is governed by <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">
-                        Apple's Standard EULA for apps.</a></p>
+                    <p>Flashword is governed by <a className="blue-link" href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">
+                        Apple's Standard EULA for apps</a>.</p>
                     <p>For any question or comment regarding Flashword (and its terms of use), you can contact me
-                        at <a href="mailto:alessiomason99@gmail.com">alessiomason99@gmail.com</a>.</p>
+                        at <a className="blue-link" href="mailto:alessiomason99@gmail.com">alessiomason99@gmail.com</a>.</p>
                 </Col>
             </Row>
         </Container>
