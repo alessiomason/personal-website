@@ -4,6 +4,7 @@ import I18nextBrowserLanguageDetector from "i18next-browser-languagedetector";
 import {homeIt, homeEn} from "./homeLocalizations";
 import {secretPageIt, secretPageEn} from "./secretPageLocalizations";
 import {maintenancePageIt, maintenancePageEn} from "./maintenancePageLocalizations";
+import {notFoundPageIt, notFoundPageEn} from "./notFoundPageLocalizations";
 import {flashwordIt, flashwordEn} from "./apps/flashwordLocalizations";
 
 const resources = {
@@ -12,6 +13,7 @@ const resources = {
             ...homeIt,
             ...secretPageIt,
             ...maintenancePageIt,
+            ...notFoundPageIt,
             ...flashwordIt
         }
     },
@@ -20,6 +22,7 @@ const resources = {
             ...homeEn,
             ...secretPageEn,
             ...maintenancePageEn,
+            ...notFoundPageEn,
             ...flashwordEn
         }
     }
