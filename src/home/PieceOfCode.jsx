@@ -1,10 +1,13 @@
 import {useEffect, useState} from 'react';
+import {useTranslation} from "react-i18next";
 import festivities from './Festivities';
 import './PieceOfCode.css';
 
-const dayjs = require('dayjs');
+const dayjs = require("dayjs");
 
 function PieceOfCode() {
+    const {t} = useTranslation();
+
     const [dirty, setDirty] = useState(false);
     const [time, setTime] = useState(dayjs().format());
     const [spinner, setSpinner] = useState('|');
@@ -53,11 +56,11 @@ function PieceOfCode() {
 
     return (
         <div className='code'>
-            <p className='text-end no-padding primary-yellow'>const dayjs = require('dayjs');</p>
+            <p className='text-end no-padding primary-yellow'>const dayjs = require("dayjs");</p>
             <p className='text-end no-padding primary-yellow'>console.log(dayjs().format())</p>
             <p className='text-end no-padding primary-yellow'>{spinner} {time}</p>
-            {currentFestivity.message &&
-                <p className='text-end no-padding primary-yellow'>console.log({currentFestivity.message})</p>}
+            {currentFestivity.messageKey &&
+                <p className='text-end no-padding primary-yellow'>console.log("{t(currentFestivity.messageKey)}")</p>}
         </div>
     );
 }

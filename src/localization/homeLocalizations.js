@@ -36,7 +36,13 @@ const homeIt = {
             "2": "Su <1>GitHub</1> trovi alcuni dei miei progetti e anche il <3>repository</3> di questo stesso sito.",
         }
     },
-    "across-the-spider-verse": "In giro per il web"
+    "across-the-spider-verse": "In giro per il web",
+    "festivities-greetings": {
+        "christmas": "Buon Natale!",
+        "new-year": "Buon anno!",
+        "easter": "Buona Pasqua!",
+        "birthday": "Buon compleanno Alessio!"
+    }
 }
 
 const homeEn = {
@@ -77,7 +83,13 @@ const homeEn = {
             "2": "On <1>GitHub</1> you can find some of my projects and even the <3>repository</3> of this very website."
         },
     },
-    "across-the-spider-verse": "Across the Spider-Verse"
+    "across-the-spider-verse": "Across the Spider-Verse",
+    "festivities-greetings": {
+        "christmas": "Merry Christmas!",
+        "new-year": "Happy New Year!",
+        "easter": "Happy Easter!",
+        "birthday": "Happy birthday Alessio!"
+    }
 }
 
 export {homeIt, homeEn};

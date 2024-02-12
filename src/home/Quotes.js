@@ -8,7 +8,9 @@ const quotes = [
         quoting: "Ralph Waldo Emerson"
     },
     {
-        quote: "Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn't really do it, they just saw something. It seemed obvious to them after a while. That's because they were able to connect experiences they've had and synthesize new things.",
+        quote: `Creativity is just connecting things. When you ask creative people how they did something,
+        they feel a little guilty because they didn't really do it, they just saw something. It seemed obvious to them
+        after a while. That's because they were able to connect experiences they've had and synthesize new things.`,
         quoting: "Steve Jobs"
     },
     {
@@ -16,7 +18,8 @@ const quotes = [
         quoting: "Marvin Phillips"
     },
     {
-        quote: "I don’t wanna be Jordan, I don’t wanna be Magic, I don’t wanna be Bird or Isiah. I don’t wanna be any of those guys. When my career’s over, I want to look in the mirror and say I did it my way.",
+        quote: `I don’t wanna be Jordan, I don’t wanna be Magic, I don’t wanna be Bird or Isiah.I don’t wanna be any
+        of those guys. When my career’s over, I want to look in the mirror and say I did it my way.`,
         quoting: "Allen Iverson"
     }
 ]
