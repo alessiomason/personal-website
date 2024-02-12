@@ -7,6 +7,7 @@ import Secret from './secret/Secret';
 import Flashword from "./apps/flashword/Flashword";
 import FlashwordPrivacyPolicy from "./apps/flashword/FlashwordPrivacyPolicy";
 import FlashwordTermsOfUse from "./apps/flashword/FlashwordTermsOfUse";
+import NotFoundPage from "./NotFoundPage";
 
 function App() {
     return (
@@ -23,9 +24,10 @@ function App2() {
                 <Route index element={<Home/>}/>
                 <Route path='secret' element={<Secret/>}/>
 
-                <Route path='/apps/flashword' element={<Flashword/>}/>
-                <Route path='/apps/flashword/privacy-policy' element={<FlashwordPrivacyPolicy/>}/>
-                <Route path='/apps/flashword/terms-of-use' element={<FlashwordTermsOfUse/>}/>
+                <Route path='apps/flashword' element={<Flashword/>}/>
+                <Route path='apps/flashword/privacy-policy' element={<FlashwordPrivacyPolicy/>}/>
+                <Route path='apps/flashword/terms-of-use' element={<FlashwordTermsOfUse/>}/>
+                <Route path='*' element={<NotFoundPage/>}/>
             </Route>
         </Routes>
     );
