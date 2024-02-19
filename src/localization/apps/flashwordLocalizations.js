@@ -2,13 +2,22 @@ const flashwordIt = {
     "flashword": {
         "app-name": "Flashword",
         "description": {
-            "1": "Flashword è la prima app che ho sviluppato!",
-            "2": `È iniziato come un progetto personale per creare qualcosa che mi serviva personalmente.
+            "1": `Ti è mai capitato di sentire una parola che non conoscevi, di cercarne il significato, e poi di
+            ben presto dimenticartene? Se sì, Flashword arriva in tuo soccorso!`,
+            "2": `Con Flashword puoi salvare le parole che senti o impari in qualsiasi modo.
+            Puoi cercarne una definizione usando i dizionari di sistema e puoi prendere appunti per ogni parola,
+            magari per annotarti una traduzione, magari per ricordarti il contesto in cui hai sentito quella parola
+            la prima volta, magari per evidenziare interessanti casi d'uso. Puoi anche dividere le parole in categorie
+            di tua scelta per organizzare velocemente tutto ciò che salvi nell'app!`,
+            "3": "Flashword è la prima app che ho sviluppato!",
+            "4": `È iniziato come un progetto personale per creare qualcosa che mi serviva personalmente.
             Tutte le volte che mi capitava di imparare una nuova parola (magari guardando un film o una serie TV
             in inglese, o magari anche qualche parola italiana poco utilizzata) la cercavo sul dizionario del telefono,
             ma poi la dimenticavo quasi subito. Ho quindi deciso di creare un posto dove salvare queste parole e tornare
             in seguito, così da non dimenticarle, ed è così che è nata l'idea per Flashword!`
         },
+        "app-store-link": "<0>Link App Store</0>",
+        "github-link": "<0>Repository GitHub</0>",
         "privacy-policy": {
             "title": "Privacy policy di Flashword",
             "description": `Flashword non raccoglie alcun dato su di te o sulle parole e categorie salvate nell'app.
@@ -29,13 +38,22 @@ const flashwordEn = {
     "flashword": {
         "app-name": "Flashword",
         "description": {
-            "1": "Flashword is the first app I developed!",
-            "2": `It started as a personal project to create something I personally needed.
+            "1": `Ever heard a word you did not know, looked it up, and then quickly forgot about it?
+            If that is the case, Flashword comes to the rescue!`,
+            "2": `With Flashword, you can save new words you hear or learn in any way.
+            You can look them up using the system's dictionaries and you can take notes for every word,
+            maybe to jot down a translation, maybe to remember the context you first heard that word in,
+            maybe to highlight interesting use cases. You can also divide the words into categories of your choosing
+            to quickly organize the words you save!`,
+            "3": "Flashword is the first app I developed!",
+            "4": `It started as a personal project to create something I personally needed.
             Every time I would learn a new word (maybe watching a film or TV series in English, or even some rarely-used
             Italian word) I would look it up on my phone's dictionary, but then quickly forget it.
             So I decided to create a place where to store and revisit these words, so that I wouldn't forget them,
             and that's how the idea for Flashword came to be!`
         },
+        "app-store-link": "<0>App Store link</0>",
+        "github-link": "<0>GitHub repository</0>",
         "privacy-policy": {
             "title": "Flashword's privacy policy",
             "description": `Flashword does not collect any data about you or the words or categories you save in the app.

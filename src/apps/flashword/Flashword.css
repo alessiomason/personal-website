@@ -12,3 +12,17 @@
 .blue-link:hover {
     color: #007aff;
 }
+
+.app-store-link {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 13px;
+    width: 150px;
+    height: 83px;
+}
+
+.app-store-link-image {
+    border-radius: 13px;
+    width: 150px;
+    height: 83px;
+}
