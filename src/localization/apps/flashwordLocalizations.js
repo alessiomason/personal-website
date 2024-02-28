@@ -20,8 +20,16 @@ const flashwordIt = {
         "github-link": "<0>Repository GitHub</0>",
         "privacy-policy": {
             "title": "Privacy policy di Flashword",
-            "description": `Flashword non raccoglie alcun dato su di te o sulle parole e categorie salvate nell'app.
-            Tutti i dati sono salvati in locale e non lasciano il dispositivo.`
+            "description": {
+                "1": `Flashword è stata creata ed è mantenuta da Alessio Mason, uno sviluppatore indipendente italiano.`,
+                "2": `Flashword non raccoglie alcun dato su di te o sulle parole e categorie salvate nell'app.
+            Tutti i dati sono salvati in locale e non vengono mai raccolti. Se hai eseguito l'accesso con il tuo Apple
+            ID, tutti i dati vengono automaticamente sincronizzati tra tutti i tuoi dispositivi attraverso iCloud,
+            rimanendo quindi completamente inaccessibili a chiunque tranne che a te.`,
+                "3": `Per qualsiasi domanda o commento riguardo Flashword (e la sua privacy policy),
+                puoi contattarmi all'indirizzo <1>alessiomason99@gmail.com</1>.`
+            },
+            "last-updated": "Ultimo aggiornamento: mercoledì 28 febbraio 2024"
         },
         "terms-of-use": {
             "title": "Termini di utilizzo di Flashword",
@@ -29,7 +37,8 @@ const flashwordIt = {
                 "1": "Flashword è governata dall'<1>EULA Standard per le app di Apple</1>.",
                 "2": `Per qualsiasi domanda o commento riguardo Flashword (e i suoi termini di utilizzo),
                 puoi contattarmi all'indirizzo <1>alessiomason99@gmail.com</1>.`
-            }
+            },
+            "last-updated": "Ultimo aggiornamento: lunedì 12 febbraio 2024"
         }
     }
 }
@@ -56,8 +65,16 @@ const flashwordEn = {
         "github-link": "<0>GitHub repository</0>",
         "privacy-policy": {
             "title": "Flashword's privacy policy",
-            "description": `Flashword does not collect any data about you or the words or categories you save in the app.
-            All data are saved locally and do not leave your device.`
+            "description": {
+                "1": `Flashword is owned and maintained by Alessio Mason, an independent developer based in Italy.`,
+                "2": `Flashword does not collect any data about you or the words or categories you save in the app.
+            All data are saved locally and are never collected. If you signed in with your Apple ID, all data are
+            automatically synced across all your devices using iCloud, thus remaining completely inaccessible
+            to anyone other than yourself.`,
+                "3": `For any question or comment regarding Flashword (and its privacy policy),
+                you can contact me at <1>alessiomason99@gmail.com</1>.`
+            },
+            "last-updated": "Last updated: Wednesday, 28 February 2024"
         },
         "terms-of-use": {
             "title": "Flashword's terms of use",
@@ -65,7 +82,8 @@ const flashwordEn = {
                 "1": "Flashword is governed by <1>Apple's Standard EULA for apps</1>.",
                 "2": `For any question or comment regarding Flashword (and its terms of use),
                 you can contact me at <1>alessiomason99@gmail.com</1>.`
-            }
+            },
+            "last-updated": "Last updated: Monday, 12 February 2024"
         }
     }
 }

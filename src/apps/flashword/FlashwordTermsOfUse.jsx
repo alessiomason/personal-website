@@ -17,10 +17,14 @@ function FlashwordTermsOfUse() {
             <Row>
                 <Col>
                     <h1>{t("flashword.terms-of-use.title")}</h1>
-                    <p><Trans i18nKey="flashword.terms-of-use.description.1">Flashword is governed by <a className="blue-link" href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">
+                    <p><Trans i18nKey="flashword.terms-of-use.description.1">Flashword is governed by <a
+                        className="blue-link" href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">
                         Apple's Standard EULA for apps</a>.</Trans></p>
-                    <p><Trans i18nKey="flashword.terms-of-use.description.2">For any question or comment regarding Flashword (and its terms of use), you can contact me
-                        at <a className="blue-link" href="mailto:alessiomason99@gmail.com">alessiomason99@gmail.com</a>.</Trans></p>
+                    <p><Trans i18nKey="flashword.terms-of-use.description.2">For any question or comment regarding
+                        Flashword (and its terms of use), you can contact me
+                        at <a className="blue-link" href="mailto:alessiomason99@gmail.com">alessiomason99@gmail.com</a>.</Trans>
+                    </p>
+                    <p>{t("flashword.terms-of-use.last-updated")}</p>
                 </Col>
             </Row>
         </Container>
