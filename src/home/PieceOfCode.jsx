@@ -19,6 +19,7 @@ function PieceOfCode() {
         for (const festivity of festivities) {
             if (dayjs(festivity.start).isBefore(now) && dayjs(festivity.end).isAfter(now)) {
                 setCurrentFestivity(festivity);
+                console.log(t(festivity.messageKey));    // add greeting in the console too
                 break;
             }
         }
