@@ -29,7 +29,8 @@ const flashwordIt = {
                 "3": `Per qualsiasi domanda o commento riguardo Flashword (e la sua privacy policy),
                 puoi contattarmi all'indirizzo <1>alessiomason99@gmail.com</1>.`
             },
-            "last-updated": "Ultimo aggiornamento: mercoledì 28 febbraio 2024"
+            "last-updated": "Ultimo aggiornamento: mercoledì 28 febbraio 2024",
+            "link": "<0>Privacy policy</0>",
         },
         "terms-of-use": {
             "title": "Termini di utilizzo di Flashword",
@@ -38,7 +39,8 @@ const flashwordIt = {
                 "2": `Per qualsiasi domanda o commento riguardo Flashword (e i suoi termini di utilizzo),
                 puoi contattarmi all'indirizzo <1>alessiomason99@gmail.com</1>.`
             },
-            "last-updated": "Ultimo aggiornamento: lunedì 12 febbraio 2024"
+            "last-updated": "Ultimo aggiornamento: lunedì 12 febbraio 2024",
+            "link": "<0>Termini di utilizzo</0>",
         }
     }
 }
@@ -74,7 +76,8 @@ const flashwordEn = {
                 "3": `For any question or comment regarding Flashword (and its privacy policy),
                 you can contact me at <1>alessiomason99@gmail.com</1>.`
             },
-            "last-updated": "Last updated: Wednesday, 28 February 2024"
+            "last-updated": "Last updated: Wednesday, 28 February 2024",
+            "link": "<0>Privacy policy</0>",
         },
         "terms-of-use": {
             "title": "Flashword's terms of use",
@@ -83,7 +86,8 @@ const flashwordEn = {
                 "2": `For any question or comment regarding Flashword (and its terms of use),
                 you can contact me at <1>alessiomason99@gmail.com</1>.`
             },
-            "last-updated": "Last updated: Monday, 12 February 2024"
+            "last-updated": "Last updated: Monday, 12 February 2024",
+            "link": "<0>Terms of use</0>",
         }
     }
 }

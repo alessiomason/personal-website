@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import {Col, Container, Row} from "react-bootstrap";
 import {Trans, useTranslation} from "react-i18next";
 import "./Flashword.css";
@@ -34,10 +35,17 @@ function Flashword() {
                     <p>{t("flashword.description.3")}</p>
                     <p>{t("flashword.description.4")}</p>
                     <p><Trans i18nKey="flashword.app-store-link">
-                        <a href="https://apps.apple.com/app/flashword-save-learnt-words/id6477286559" className="blue-link">App Store link</a>
+                        <Link to="https://apps.apple.com/app/flashword-save-learnt-words/id6477286559"
+                           className="blue-link">App Store link</Link>
                     </Trans></p>
                     <p><Trans i18nKey="flashword.github-link">
-                        <a href="https://github.com/alessiomason/flashword" className="blue-link">GitHub repository</a>
+                        <Link to="https://github.com/alessiomason/flashword" className="blue-link">GitHub repository</Link>
+                    </Trans></p>
+                    <p><Trans i18nKey="flashword.privacy-policy.link">
+                        <Link to="privacy-policy" className="blue-link">Privacy policy</Link>
+                    </Trans></p>
+                    <p><Trans i18nKey="flashword.terms-of-use.link">
+                        <Link to="terms-of-use" className="blue-link">Terms os use</Link>
                     </Trans></p>
                 </Col>
             </Row>
