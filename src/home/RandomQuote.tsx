@@ -1,5 +1,5 @@
-import quotes from './Quotes';
-import './RandomQuote.css';
+import {quotes} from "./Quotes";
+import "./RandomQuote.css";
 
 function RandomQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);

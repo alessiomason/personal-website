@@ -1,7 +1,7 @@
-import {useEffect, useState} from 'react';
+import {useEffect, useState} from "react";
 import {useTranslation} from "react-i18next";
-import festivities from './Festivities';
-import './PieceOfCode.css';
+import {Festivity, festivities} from "./Festivities";
+import "./PieceOfCode.css";
 
 const dayjs = require("dayjs");
 
@@ -11,7 +11,7 @@ function PieceOfCode() {
     const [dirty, setDirty] = useState(false);
     const [time, setTime] = useState(dayjs().format());
     const [spinner, setSpinner] = useState('|');
-    const [currentFestivity, setCurrentFestivity] = useState({});
+    const [currentFestivity, setCurrentFestivity] = useState<Festivity>();
 
     useEffect(() => {
         const now = dayjs();
@@ -56,12 +56,12 @@ function PieceOfCode() {
     }, [dirty])
 
     return (
-        <div className='code'>
-            <p className='text-end no-padding primary-yellow'>const dayjs = require("dayjs");</p>
-            <p className='text-end no-padding primary-yellow'>console.log(dayjs().format())</p>
-            <p className='text-end no-padding primary-yellow'>{spinner} {time}</p>
-            {currentFestivity.messageKey &&
-                <p className='text-end no-padding primary-yellow'>console.log("{t(currentFestivity.messageKey)}")</p>}
+        <div className="code">
+            <p className="text-end no-padding primary-yellow">const dayjs = require("dayjs");</p>
+            <p className="text-end no-padding primary-yellow">console.log(dayjs().format())</p>
+            <p className="text-end no-padding primary-yellow">{spinner} {time}</p>
+            {currentFestivity &&
+                <p className="text-end no-padding primary-yellow">console.log("{t(currentFestivity.messageKey)}")</p>}
         </div>
     );
 }
