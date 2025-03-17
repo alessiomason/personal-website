@@ -1,10 +1,10 @@
 const homeIt = {
-    "hi": "Ciao! ",
-    "hi-subheadline": "Mi chiamo Alessio e sono un ingegnere informatico.",
+    "hi": "Ciao, mi chiamo Alessio! ",
+    "hi-subheadline": "Sono un ingegnere informatico e un insegnante nelle scuole superiori.",
     "who-am-i": "Chi sono",
     "about": {
-        "1": "Ho studiato Ingegneria informatica presso il Politecnico di Torino.",
-        "2": "Nel tempo ho realizzato diverse applicazioni web e mobile: su questo sito troverai presto alcuni dei miei lavori e progetti personali."
+        "1": "Ho studiato Ingegneria informatica presso il Politecnico di Torino. Al momento insegno Informatica nelle scuole superiori e sviluppo applicazioni web e mobile.",
+        "2": "Su questo sito troverai presto alcuni dei miei lavori e progetti personali che ho realizzato nel tempo."
     },
     "interests": "Interessi e competenze",
     "scroll-to-know-more": "Scorri i riquadri per saperne di più!",
@@ -46,12 +46,12 @@ const homeIt = {
 }
 
 const homeEn = {
-    "hi": "Hi! ",
-    "hi-subheadline": "I'm Alessio and I'm a computer engineer.",
+    "hi": "Hi! I'm Alessio! ",
+    "hi-subheadline": "I'm a computer engineer and a high school teacher.",
     "who-am-i": "Who am I",
     "about": {
-        "1": "I studied Computer engineering at Politecnico di Torino.",
-        "2": "Throughout time I developed several web and mobile applications: on this website you'll soon find some of my works and personal projects."
+        "1": "I studied Computer engineering at Politecnico di Torino. I currently teach Computer Science in high school and develop web and mobile applications.",
+        "2": "On this website you'll soon find some of my works and personal projects I developed throughout time."
     },
     "scroll-to-know-more": "Scroll the boxes to get to know more!",
     "interests": "Interests and expertise",
