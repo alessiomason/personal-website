@@ -1,8 +1,8 @@
-@import url(../Colors.css);
+@import url(../../Colors.css);
 
 .first-home-slide {
 	background-color: var(--opaque-blue);
-	background-image: url("../images/background-1.jpg");
+	background-image: url("../../images/background-1.jpg");
 	background-size: cover;
 	background-position: center;
 }

@@ -4,7 +4,7 @@ import {useMediaQuery} from "react-responsive";
 import {useTranslation} from "react-i18next";
 import PieceOfCode from "./PieceOfCode";
 import RandomQuote from "./RandomQuote";
-import ProfilePicture from "../images/profile_picture.jpeg";
+import ProfilePicture from "../../images/profile_picture.jpeg";
 import "./FirstHomeSlide.css";
 
 function FirstHomeSlide() {

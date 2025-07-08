@@ -1,14 +1,10 @@
-@import url(../Colors.css);
+@import url(../../Colors.css);
 
 .second-home-slide {
-    /* background-color: var(--opaque-blue);
-    background-image: linear-gradient(var(--mid-blue) 1px, transparent 1px), linear-gradient(to right, var(--mid-blue) 1px, var(--opaque-blue) 1px);
-    background-size: 100px 100px; */
-
     /* Pattern generated with https://www.magicpattern.design/tools/css-backgrounds */
-    background-color: var(--navy-blue);
-    background-size: 100px 100px;
-    background-image: repeating-linear-gradient(45deg, var(--dark-blue) 0, var(--dark-blue) 1px, var(--navy-blue) 0, var(--navy-blue) 50%);
+    background-color: var(--mid-blue);
+    background-image: radial-gradient(var(--dark-blue) 0.8px, var(--mid-blue) 0.8px);
+    background-size: 16px 16px;
 
     padding-top: 30px;
     padding-bottom: 30px;

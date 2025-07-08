@@ -1,9 +1,8 @@
 import React from "react";
 import ReactPageScroller from "react-page-scroller";
 import {useMediaQuery} from "react-responsive";
-import FirstHomeSlide from "./FirstHomeSlide";
-import {SecondHomeSlideDesktop, SecondHomeSlideMobile} from "./SecondHomeSlide";
-import ThirdHomeSlide from "./third-home-slide/ThirdHomeSlide";
+import FirstHomeSlide from "./first-home-slide/FirstHomeSlide";
+import {SecondHomeSlideDesktop, SecondHomeSlideMobile} from "./second-home-slide/SecondHomeSlide";
 import "../Global.css";
 
 function Home() {
@@ -24,17 +23,13 @@ function Home() {
     return (
         <>
             <TabletLaptop>
-                <ReactPageScroller>
-                    <FirstHomeSlide/>
-                    <SecondHomeSlideDesktop/>
-                    <ThirdHomeSlide/>
-                </ReactPageScroller>
+                <FirstHomeSlide/>
+                <SecondHomeSlideDesktop/>
             </TabletLaptop>
 
             <Mobile>
                 <FirstHomeSlide/>
                 <SecondHomeSlideMobile/>
-                <ThirdHomeSlide/>
             </Mobile>
         </>
     );
