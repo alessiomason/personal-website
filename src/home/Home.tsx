@@ -3,6 +3,7 @@ import ReactPageScroller from "react-page-scroller";
 import {useMediaQuery} from "react-responsive";
 import FirstHomeSlide from "./FirstHomeSlide";
 import {SecondHomeSlideDesktop, SecondHomeSlideMobile} from "./SecondHomeSlide";
+import ThirdHomeSlide from "./third-home-slide/ThirdHomeSlide";
 import "../Global.css";
 
 function Home() {
@@ -26,12 +27,14 @@ function Home() {
                 <ReactPageScroller>
                     <FirstHomeSlide/>
                     <SecondHomeSlideDesktop/>
+                    <ThirdHomeSlide/>
                 </ReactPageScroller>
             </TabletLaptop>
 
             <Mobile>
                 <FirstHomeSlide/>
                 <SecondHomeSlideMobile/>
+                <ThirdHomeSlide/>
             </Mobile>
         </>
     );

@@ -1,0 +1,97 @@
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    width: 100vw;
+    margin-left: -10px; /* compensa il padding della slide */
+    margin-right: -10px;
+}
+
+.carousel-image {
+    display: block;
+    max-width: 40vw;
+    min-height: 450px;
+    height: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.carousel-container:hover .carousel-image {
+    animation-play-state: paused;
+}
+
+.carousel-image.image1 {
+    transform: translate3d(1vw, -5vh, 0) rotate(-10deg) scale(0.8);
+    animation: slide-left-image-1 10s linear infinite;
+    will-change: transform;
+}
+
+@keyframes slide-left-image-1 {
+    0% {
+        transform: translate3d(1vw, -5vh, 0) rotate(-10deg) scale(0.8);
+    }
+    100% {
+        transform: translate3d(calc(1vw + (-1) * (40vw + 200px)), -5vh, 0) rotate(-10deg) scale(0.8);
+    }
+}
+
+.carousel-image.image2 {
+    transform: translate3d(1vw, -5vh, 0) rotate(-10deg) scale(0.8);
+    animation: slide-left-image-1 10s linear infinite;
+    will-change: transform;
+}
+
+@keyframes slide-left-image-2 {
+    0% {
+        transform: translate3d(1vw, -5vh, 0) rotate(-10deg) scale(0.8) translateX(0);
+    }
+    100% {
+        transform: translate3d(calc(1vw + (-1) * (40vw + 200px)), -5vh, 0) rotate(-10deg) scale(0.8);
+    }
+}
+
+.carousel-image.image3 {
+    transform: translate3d(1vw, -5vh, 0) rotate(-10deg) scale(0.8);
+    animation: slide-left-image-1 10s linear infinite;
+    will-change: transform;
+}
+
+@keyframes slide-left-image-3 {
+    0% {
+        transform: translate3d(1vw, -5vh, 0) rotate(-10deg) scale(0.8) translateX(0);
+    }
+    100% {
+        transform: translate3d(calc(1vw + (-1) * (40vw + 200px)), -5vh, 0) rotate(-10deg) scale(0.8);
+    }
+}
+
+.carousel-image.image4 {
+    transform: translate3d(1vw, -5vh, 0) rotate(-10deg) scale(0.8);
+    animation: slide-left-image-1 10s linear infinite;
+    will-change: transform;
+}
+
+@keyframes slide-left-image-4 {
+    0% {
+        transform: translate3d(1vw, -5vh, 0) rotate(-10deg) scale(0.8) translateX(0);
+    }
+    100% {
+        transform: translate3d(calc(1vw + (-1) * (40vw + 200px)), -5vh, 0) rotate(-10deg) scale(0.8);
+    }
+}
+
+.carousel-image.image5 {
+    transform: translate3d(1vw, -5vh, 0) rotate(-10deg) scale(0.8);
+    animation: slide-left-image-1 10s linear infinite;
+    will-change: transform;
+}
+
+@keyframes slide-left-image-5 {
+    0% {
+        transform: translate3d(1vw, -5vh, 0) rotate(-10deg) scale(0.8) translateX(0);
+    }
+    100% {
+        transform: translate3d(calc(1vw + (-1) * (40vw + 200px)), -5vh, 0) rotate(-10deg) scale(0.8);
+    }
+}
