@@ -19,7 +19,7 @@ function SecondHomeSlideDesktop() {
                     <WorksBox/>
                 </Row>
 
-                <Row className="mt-4 d-flex align-items-center">
+                <Row className="mt-4 d-flex align-items-end">
                     <Col>
                         <AcrossTheWeb/>
                     </Col>
@@ -71,7 +71,16 @@ function SecondHomeSlideMobile() {
                 </Row>
             </div>
 
-            <AcrossTheWeb/>
+            <Row>
+                <Col className="d-flex justify-content-center text-center">
+                    <AcrossTheWeb/>
+                </Col>
+            </Row>
+            <Row>
+                <Col className="d-flex justify-content-center">
+                    <GitHubStats/>
+                </Col>
+            </Row>
         </div>
     );
 }
