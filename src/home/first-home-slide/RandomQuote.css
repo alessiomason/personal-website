@@ -5,11 +5,18 @@
 	max-width: 50%;
 }
 
+@media (max-width: 767px) {
+	.random-quote {
+		max-width: 70%;
+	}
+}
+
 .quote,
 .quoting {
 	margin-bottom: 0;
 	padding-left: 15px;
 	border-left: 2px solid var(--primary-yellow);
+	text-wrap: balance;
 }
 
 .quote {

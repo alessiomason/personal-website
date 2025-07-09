@@ -13,8 +13,8 @@ function FirstHomeSlide() {
 
     return (
         <div className="d-flex flex-column justify-content-center full-screen-slide first-home-slide">
-            {!isMobile && <RandomQuote/>}
-            <PieceOfCode/>
+            {!isMobile && <PieceOfCode/>}
+            <RandomQuote/>
 
             <Row className="d-flex align-items-center">
                 <Col md={3} className={"d-flex " + (isMobile ? "justify-content-center" : "justify-content-end")}>
