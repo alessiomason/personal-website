@@ -1,5 +1,5 @@
 import {Col, Row} from "react-bootstrap";
-import Gestionale from "../../../images/works/KS.png";
+import Gestionale from "../../images/works/KS.png";
 import {useTranslation} from "react-i18next";
 
 function GestionaleProject() {
@@ -7,7 +7,7 @@ function GestionaleProject() {
 
     return (
         <Row className="single-project-slide">
-            <Col xs={5} className="text-end">
+            <Col xs={6} className="text-end">
                 <h2>Gestionale</h2>
                 <p>Un'applicazione web per la gestione del personale e delle ore lavorate.</p>
                 <p>Scritto in TypeScript usando Express come framework backend e React per il frontend,
@@ -16,7 +16,7 @@ function GestionaleProject() {
                 costo in base alle ore lavorate, permette di visualizzare le ore lavorate aggregate per commessa, mese
                 e dipendente, di pianificare le attività e gestire il piano ferie.</p>
             </Col>
-            <Col>
+            <Col xs={5}>
                 <img src={Gestionale} className="gestionale-project-image"/>
             </Col>
         </Row>

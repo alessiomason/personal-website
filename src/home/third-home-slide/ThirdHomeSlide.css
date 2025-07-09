@@ -1,5 +1,10 @@
-.projects-slide {
+.third-home-slide {
     padding: 20px;
+
+    /* Pattern generated with https://www.magicpattern.design/tools/css-backgrounds */
+    background-color: var(--mid-blue);
+    background-image: radial-gradient(var(--dark-blue) 0.8px, var(--mid-blue) 0.8px);
+    background-size: 16px 16px;
 }
 
 .single-project-slide {

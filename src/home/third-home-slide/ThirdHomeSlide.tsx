@@ -1,11 +1,11 @@
 import {Col, Row} from "react-bootstrap";
-import "./Projects.css";
 import FlashwordProject from "./FlashwordProject";
 import GestionaleProject from "./GestionaleProject";
+import "./ThirdHomeSlide.css";
 
-function Projects() {
+function ThirdHomeSlide() {
     return (
-        <div className="projects-slide">
+        <div className="third-home-slide primary-yellow">
             <h1>I miei progetti</h1>
             <p>Alcuni miei progetti personali.</p>
             <FlashwordProject/>
@@ -14,4 +14,4 @@ function Projects() {
     );
 }
 
-export default Projects;
+export default ThirdHomeSlide;

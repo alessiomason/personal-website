@@ -2,11 +2,12 @@
 
 .second-home-slide {
     width: 100vw;
+    padding: 20px;
 
     /* Pattern generated with https://www.magicpattern.design/tools/css-backgrounds */
-    background-color: var(--mid-blue);
-    background-image: radial-gradient(var(--dark-blue) 0.8px, var(--mid-blue) 0.8px);
-    background-size: 16px 16px;
+    background-color: var(--navy-blue);
+    background-size: 100px 100px;
+    background-image: repeating-linear-gradient(45deg, var(--dark-blue) 0, var(--dark-blue) 1px, var(--navy-blue) 0, var(--navy-blue) 50%);
 }
 
 .justify-text {
@@ -76,49 +77,10 @@ li {
     color: rgba(255, 213, 0, 0.75);
 }
 
-/* Waiting icon animation */
-
-@keyframes wait-rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    40% {
-        transform: rotate(180deg);
-    }
-
-    60% {
-        transform: rotate(180deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.waiting-icon {
+.works-icon {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: xx-large;
-    animation: wait-rotate 1s 7;
-}
-
-/* Flicker animation */
-
-@keyframes flicker {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.flicker-animation {
-    margin-bottom: 10px;
-    opacity: 0;
-    animation: flicker 0.05s linear 2s 7 alternate forwards;
 }
 
 /* Animation of the border line building around the box */

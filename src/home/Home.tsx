@@ -4,6 +4,7 @@ import {useMediaQuery} from "react-responsive";
 import FirstHomeSlide from "./first-home-slide/FirstHomeSlide";
 import {SecondHomeSlideDesktop, SecondHomeSlideMobile} from "./second-home-slide/SecondHomeSlide";
 import "../Global.css";
+import ThirdHomeSlide from "./third-home-slide/ThirdHomeSlide";
 
 function Home() {
     interface LayoutProps {
@@ -24,12 +25,18 @@ function Home() {
         <>
             <TabletLaptop>
                 <FirstHomeSlide/>
+                <hr></hr>
                 <SecondHomeSlideDesktop/>
+                <hr></hr>
+                <ThirdHomeSlide/>
             </TabletLaptop>
 
             <Mobile>
                 <FirstHomeSlide/>
+                <hr></hr>
                 <SecondHomeSlideMobile/>
+                <hr></hr>
+                <ThirdHomeSlide/>
             </Mobile>
         </>
     );

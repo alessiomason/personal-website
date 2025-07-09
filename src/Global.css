@@ -25,3 +25,14 @@
 .no-animate {
 	animation-play-state: paused !important;
 }
+
+hr {
+	color: var(--primary-yellow);
+	opacity: 1;
+	border-top: 3px solid;
+	margin: 0;
+}
+
+p {
+	text-wrap: pretty;
+}

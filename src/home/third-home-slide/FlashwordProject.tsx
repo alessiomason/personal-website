@@ -1,6 +1,6 @@
 import {Button, Col, Row} from "react-bootstrap";
-import Flashword from "../../../images/works/Flashword.png";
-import FlashwordIcon from "../../../apps/flashword/images/Flashword_icon.png";
+import Flashword from "../../images/works/Flashword.png";
+import FlashwordIcon from "../../apps/flashword/images/Flashword_icon.png";
 import {useTranslation} from "react-i18next";
 
 function FlashwordProject() {

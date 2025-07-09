@@ -1,7 +1,7 @@
 import {useRef} from "react";
-import {useScrollProgress} from "../../../scrollHooks";
+import {useScrollProgress} from "../../scrollHooks";
 import {Col, Row} from "react-bootstrap";
-import KeepSmiling from "../../../images/works/KS.png";
+import KeepSmiling from "../../images/works/KS.png";
 
 function SampleScrollAnimation() {
     const ref = useRef<HTMLImageElement | null>(null);

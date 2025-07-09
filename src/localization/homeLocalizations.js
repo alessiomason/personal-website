@@ -4,7 +4,7 @@ const homeIt = {
     "who-am-i": "Chi sono",
     "about": {
         "1": "Ho studiato Ingegneria informatica presso il Politecnico di Torino. Al momento insegno Informatica nelle scuole superiori e sviluppo applicazioni web e mobile.",
-        "2": "Su questo sito troverai presto alcuni dei miei lavori e progetti personali che ho realizzato nel tempo."
+        "2": "Su questo sito trovi alcuni dei miei lavori e progetti personali che ho realizzato nel tempo."
     },
     "interests": "Interessi e competenze",
     "scroll-to-know-more": "Scorri i riquadri per saperne di più!",
@@ -32,8 +32,8 @@ const homeIt = {
     "works": {
         "title": "Lavori e progetti",
         "description": {
-            "1": "Il sito è ancora parzialmente in costruzione: troverai presto alcuni dei miei lavori e progetti personali in una pagina dedicata.",
-            "2": "Su <1>GitHub</1> trovi alcuni dei miei progetti e anche il <3>repository</3> di questo stesso sito.",
+            "1": "Attualmente insegno Informatica nelle scuole superiori, ma nel tempo ho realizzato e continuo a realizzare progetti personali e lavori. Ne ho raccolti alcuni qui sotto",
+            "2": "Su <1>GitHub</1> trovi alcuni di questi progetti e anche il <3>repository</3> di questo stesso sito.",
         }
     },
     "across-the-spider-verse": "In giro per il web",
