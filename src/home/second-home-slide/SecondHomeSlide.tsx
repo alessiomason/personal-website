@@ -8,19 +8,24 @@ import {
 import {useInView} from "react-intersection-observer";
 import {useMediaQuery} from "react-responsive";
 import {ArrowLeftCircleFill, ArrowRightCircleFill} from "react-bootstrap-icons";
+import Projects from "./projects/Projects";
 import "./SecondHomeSlide.css";
 
 function SecondHomeSlideDesktop() {
     return (
-        <div className="d-flex flex-column justify-content-between full-screen-slide second-home-slide primary-yellow">
-            <WhoAmIDesktop/>
+        <div className="second-home-slide primary-yellow">
+            <div className="full-screen-slide d-flex flex-column justify-content-between">
+                <WhoAmIDesktop/>
 
-            <Row>
-                <InterestsBox/>
-                <WorksBox/>
-            </Row>
+                <Row>
+                    <InterestsBox/>
+                    <WorksBox/>
+                </Row>
 
-            <AcrossTheWeb/>
+                <AcrossTheWeb/>
+            </div>
+
+            <Projects/>
         </div>
     );
 }
@@ -42,7 +47,7 @@ function SecondHomeSlideMobile() {
     }
 
     return (
-        <div className="d-flex flex-column justify-content-between full-screen-slide second-home-slide primary-yellow">
+        <div className="second-home-slide primary-yellow">
             <>&nbsp;</>
             <div>
                 <Carousel activeIndex={index} onSelect={handleSelect} interval={null} wrap={false} indicators={false}
@@ -65,6 +70,8 @@ function SecondHomeSlideMobile() {
             </div>
 
             <AcrossTheWeb/>
+
+            <Projects/>
         </div>
     );
 }
@@ -73,7 +80,7 @@ function WhoAmIDesktop() {
     const {t} = useTranslation();
 
     return (
-        <div>
+        <div className="mb-5">
             <h1>{t("who-am-i")}</h1>
             <div className="justify-text">{t("about.1")}</div>
             <div className="justify-text">{t("about.2")}</div>
@@ -189,7 +196,7 @@ function AcrossTheWeb() {
     const isMobile = useMediaQuery({maxWidth: 767});
 
     return (
-        <div ref={ref} className={"flicker-animation " + (inView || isMobile ? "animate" : "no-animate")}>
+        <div ref={ref} className={"mt-5 flicker-animation " + (inView || isMobile ? "animate" : "no-animate")}>
             <h3>{t("across-the-spider-verse")}</h3>
             <div className="d-flex align-items-center"><Github className="web-icon"/><a
                 href="https://github.com/alessiomason">@alessiomason</a></div>

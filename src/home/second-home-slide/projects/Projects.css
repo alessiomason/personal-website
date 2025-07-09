@@ -1,0 +1,31 @@
+.projects-slide {
+    padding: 20px;
+}
+
+.single-project-slide {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.flashword-project-image {
+    width: 20vw;
+    transform: translate3d(1vw, -5vh, 0) rotate(-7deg) scale(0.8);
+    margin-left: 8vw;
+    margin-top: 3rem;
+}
+
+.flashword-project-icon {
+    max-width: 200px;
+    border-radius: 25px;
+}
+
+.ks-image {
+    width: 20vw;
+}
+
+.gestionale-project-image {
+    width: 40vw;
+    transform: translate3d(-4vw, -5vh, 0) rotate(4deg) scale(0.95);
+    margin-left: 8vw;
+    margin-top: 3rem;
+}
