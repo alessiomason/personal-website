@@ -1,4 +1,3 @@
-import {useLayoutEffect} from "react";
 import {Link} from "react-router-dom";
 import {Col, Container, Row} from "react-bootstrap";
 import {Trans, useTranslation} from "react-i18next";
