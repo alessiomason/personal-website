@@ -16,7 +16,8 @@ function NotFoundPage() {
 
             <Row className="mt-4">
                 <Col className="d-flex justify-content-center">
-                    <Button variant="warning" onClick={() => navigate("/")}>{t("not-found.button")}</Button>
+                    <Button variant="warning" onClick={() => navigate("/")}>
+                        {t("not-found.button")}</Button>
                 </Col>
             </Row>
         </div>

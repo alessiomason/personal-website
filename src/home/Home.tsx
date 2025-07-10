@@ -1,5 +1,4 @@
 import React from "react";
-import ReactPageScroller from "react-page-scroller";
 import {useMediaQuery} from "react-responsive";
 import FirstHomeSlide from "./first-home-slide/FirstHomeSlide";
 import {SecondHomeSlideDesktop, SecondHomeSlideMobile} from "./second-home-slide/SecondHomeSlide";
