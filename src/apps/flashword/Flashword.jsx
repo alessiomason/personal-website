@@ -1,3 +1,4 @@
+import {useLayoutEffect} from "react";
 import {Link} from "react-router-dom";
 import {Col, Container, Row} from "react-bootstrap";
 import {Trans, useTranslation} from "react-i18next";
@@ -11,7 +12,7 @@ function Flashword() {
         <Container>
             <Row>
                 <Col className="d-flex justify-content-center">
-                    <img src={FlashwordIcon} className="flashword-icon" alt="Flashword's icon"/>
+                    <img decoding="sync" src={FlashwordIcon} className="flashword-icon" alt="Flashword's icon"/>
                 </Col>
             </Row>
 
@@ -22,6 +23,7 @@ function Flashword() {
                         <img
                         src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1708041600"
                         alt="Download on the App Store"
+                        decoding="sync"
                         className="app-store-link-image"/>
                     </a>
                 </Col>

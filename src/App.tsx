@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {useLayoutEffect} from "react";
+import {BrowserRouter as Router, Routes, Route, useLocation} from "react-router-dom";
 import PageLayout from "./PageLayout";
 import Home from "./home/Home";
 import Maintenance from "./maintenance/Maintenance";
@@ -18,6 +19,12 @@ function App() {
 }
 
 function App2() {
+    const location = useLocation();
+
+    useLayoutEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: "instant"});
+    }, [location.pathname]);
+
     return (
         <Routes>
             <Route path="/" element={<PageLayout/>}>
