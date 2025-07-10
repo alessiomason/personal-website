@@ -1,6 +1,7 @@
 import {Col, Row} from "react-bootstrap";
-import GestionaleTMImage from "../../images/works/Gestionale TM.png";
 import {useTranslation} from "react-i18next";
+import GestionaleTMImage from "../../images/works/Gestionale TM.png";
+import "./GestionaleProject.css";
 
 function GestionaleProject() {
     const {t} = useTranslation();

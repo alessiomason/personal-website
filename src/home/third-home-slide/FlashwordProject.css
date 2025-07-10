@@ -1,0 +1,36 @@
+.flashword-project-image {
+    width: 20vw;
+    transform: translate3d(1vw, -3vh, 0) rotate(-7deg) scale(0.9);
+}
+
+.flashword-project-icon {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 25px;
+}
+
+@media (min-width: 767px) {
+    .flashword-project-image {
+        margin-left: 8vw;
+    }
+
+    .flashword-text-box {
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .flashword-project-image {
+        width: 40vw;
+        margin-top: 0;
+        transform: translate3d(1vw, 0vh, 0) rotate(-7deg) scale(0.8);
+    }
+
+    .flashword-project-icon {
+        max-width: 30vw;
+    }
+
+    .flashword-text-box {
+        margin-top: 2rem;
+    }
+}

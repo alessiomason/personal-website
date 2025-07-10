@@ -1,6 +1,7 @@
 import {Col, Row} from "react-bootstrap";
-import KeepSmilingImage from "../../images/works/KS.png";
 import {useTranslation} from "react-i18next";
+import KeepSmilingImage from "../../images/works/KS.png";
+import "./KeepSmilingProject.css";
 
 function KeepSmilingProject() {
     const {t} = useTranslation();

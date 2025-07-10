@@ -3,6 +3,7 @@ import {useTranslation} from "react-i18next";
 import {Button, Col, Row} from "react-bootstrap";
 import FlashwordImage from "../../images/works/Flashword.png";
 import FlashwordIcon from "../../apps/flashword/images/Flashword_icon.png";
+import "./FlashwordProject.css";
 
 function FlashwordProject() {
     const {t} = useTranslation();

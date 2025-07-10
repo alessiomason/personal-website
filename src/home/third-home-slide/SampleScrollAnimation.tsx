@@ -26,7 +26,7 @@ function SampleScrollAnimation() {
             <div className="mb-5">
                 <Row>
                     <Col>
-                        <img src={KeepSmiling} className="ks-image mt-5" ref={ref} style={{
+                        <img src={KeepSmiling} className="ks-project-image mt-5" ref={ref} style={{
                             width: "20vw",
                             transform: `translate3d(${tranformX}px, ${0}px, 0) scale(${progress})`,
                             //opacity: progress

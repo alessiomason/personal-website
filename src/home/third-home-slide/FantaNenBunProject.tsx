@@ -1,11 +1,14 @@
-import {useNavigate} from "react-router-dom";
-import {useTranslation} from "react-i18next";
 import {Button, Col, Row} from "react-bootstrap";
+import {useTranslation} from "react-i18next";
 import Flashword from "../../images/works/Flashword.png";
+import "./FantaNenBunProject.css";
 
 function FantaNenBunProject() {
     const {t} = useTranslation();
-    const navigate = useNavigate();
+
+    function handleButtonClick() {
+        window.location.href = "https://www.fantanenbun.it";
+    }
 
     return (
         <Row className="single-project-slide">
@@ -18,9 +21,7 @@ function FantaNenBunProject() {
                 <p>{t("projects.fantanenbun.description")}</p>
 
                 <div className="d-flex justify-content-center">
-                    <Button variant="warning" onClick={() => navigate("https://www.fantanenbun.it")}>
-                        {t("visit-website")}
-                    </Button>
+                    <Button variant="warning" onClick={handleButtonClick}>{t("visit-website")}</Button>
                 </div>
             </Col>
             <Col/>
