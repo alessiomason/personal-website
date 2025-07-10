@@ -1,6 +1,7 @@
 import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import {Button, Col, Row} from "react-bootstrap";
+import {useMediaQuery} from "react-responsive";
 import FlashwordImage from "../../images/works/Flashword.png";
 import FlashwordIcon from "../../apps/flashword/images/Flashword_icon.png";
 import "./FlashwordProject.css";
@@ -8,13 +9,14 @@ import "./FlashwordProject.css";
 function FlashwordProject() {
     const {t} = useTranslation();
     const navigate = useNavigate();
+    const isMobile = useMediaQuery({maxWidth: 767});
 
     return (
         <Row className="single-project-slide">
-            <Col xs={12} sm={4} className="d-flex justify-content-center align-items-start">
+            <Col xs={6} sm={4} className="d-flex justify-content-center align-items-start">
                 <img src={FlashwordImage} className="flashword-project-image" alt="A screenshot of Flashword"/>
             </Col>
-            <Col xs={12} sm={2} className="d-flex justify-content-center">
+            <Col xs={6} sm={2} className={`d-flex justify-content-center ${isMobile ? "align-items-center" : ""}`}>
                 <img src={FlashwordIcon} className="flashword-project-icon" alt="Flashword's icon"/>
             </Col>
             <Col xs={12} sm={4} className="flashword-text-box">

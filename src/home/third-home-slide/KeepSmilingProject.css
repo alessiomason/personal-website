@@ -1,2 +1,13 @@
 .ks-project-image {
+    width: 40vw;
+    transform: translate3d(-4vw, -5vh, 0) rotate(2deg) scale(1.1);
+    margin-left: 8vw;
+    margin-top: 3rem;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .ks-project-image {
+        width: 75vw;
+    }
 }

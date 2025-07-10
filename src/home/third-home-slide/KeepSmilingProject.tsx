@@ -14,7 +14,7 @@ function KeepSmilingProject() {
                 <p>{t("projects.keepsmiling.description")}</p>
             </Col>
             <Col xs={12} sm={5} className="right-hand-side-project-image-column">
-                <img src={KeepSmilingImage} className="gestionale-project-image"
+                <img src={KeepSmilingImage} className="ks-project-image"
                      alt="A screenshot of the KeepSmiling web application"/>
             </Col>
         </Row>

@@ -1,16 +1,18 @@
-.fantanenbun-project-image {
+.fantanenbun-project-teams-image {
+    z-index: 1;
     width: 20vw;
-    transform: translate3d(1vw, -3vh, 0) rotate(-7deg) scale(0.9);
+    transform: translate3d(4.5vw, -4vh, 0) rotate(-3deg) scale(1.1);
 }
 
-.fantanenbun-project-icon {
-    max-width: 200px;
-    max-height: 200px;
-    border-radius: 25px;
+.fantanenbun-project-ranking-image {
+    z-index: 0;
+    width: 20vw;
+    transform: translate3d(0vw, -4vh, 0) scale(1.1);
 }
 
+/* Desktop */
 @media (min-width: 767px) {
-    .fantanenbun-project-image {
+    .fantanenbun-project-teams-image {
         margin-left: 8vw;
     }
 
@@ -19,15 +21,17 @@
     }
 }
 
+/* Mobile */
 @media (max-width: 767px) {
-    .fantanenbun-project-image {
-        width: 40vw;
+    .fantanenbun-project-teams-image {
+        width: 48vw;
         margin-top: 0;
-        transform: translate3d(1vw, 0vh, 0) rotate(-7deg) scale(0.8);
+        transform: translate3d(6vw, -2vh, 0) rotate(-3deg) scale(1.15);
     }
 
-    .fantanenbun-project-icon {
-        max-width: 30vw;
+    .fantanenbun-project-ranking-image {
+        width: 48vw;
+        transform: translate3d(-6vw, -2vh, 0) scale(1.15);
     }
 
     .fantanenbun-text-box {

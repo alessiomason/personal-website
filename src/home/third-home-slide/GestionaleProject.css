@@ -4,3 +4,10 @@
     margin-left: 8vw;
     margin-top: 3rem;
 }
+
+/* Mobile */
+@media (max-width: 767px) {
+    .gestionale-project-image {
+        width: 75vw;
+    }
+}
