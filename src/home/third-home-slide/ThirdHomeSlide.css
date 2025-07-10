@@ -25,12 +25,11 @@
 }
 
 .ks-image {
-    width: 20vw;
 }
 
 .gestionale-project-image {
     width: 40vw;
-    transform: translate3d(-4vw, -5vh, 0) rotate(4deg) scale(0.95);
+    transform: translate3d(-4vw, -5vh, 0) rotate(4deg) scale(1.1);
     margin-left: 8vw;
     margin-top: 3rem;
 }

@@ -13,10 +13,10 @@
 .across-the-web {
     margin-bottom: 10px;
     opacity: 0;
-    animation: flicker 0.05s linear 2s 7 alternate forwards;
+    animation: flicker 0.05s linear 0.5s 7 alternate forwards;
 }
 
 .github-stats {
     opacity: 0;
-    animation: flicker 0.05s linear 2.25s 7 alternate forwards;
+    animation: flicker 0.05s linear 0.75s 7 alternate forwards;
 }

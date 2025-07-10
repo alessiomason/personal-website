@@ -36,3 +36,12 @@ hr {
 p {
 	text-wrap: pretty;
 }
+
+.btn-warning {
+	color: var(--mid-blue);
+	background-color: var(--primary-yellow);
+}
+
+.btn-warning:hover, .btn-warning:active {
+	color: var(--navy-blue) !important;
+}
