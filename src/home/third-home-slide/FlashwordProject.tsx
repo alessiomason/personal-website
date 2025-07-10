@@ -11,10 +11,10 @@ function FlashwordProject() {
     return (
         <Row className="single-project-slide">
             <Col xs={12} sm={4} className="d-flex justify-content-center align-items-start">
-                <img src={Flashword} className="flashword-project-image"/>
+                <img src={Flashword} className="flashword-project-image" alt="A screenshot of Flashword"/>
             </Col>
             <Col xs={12} sm={2} className="d-flex justify-content-center">
-                <img src={FlashwordIcon} className="flashword-project-icon"/>
+                <img src={FlashwordIcon} className="flashword-project-icon" alt="Flashword's icon"/>
             </Col>
             <Col xs={12} sm={4} className="flashword-text-box">
                 <h2>Flashword</h2>

@@ -13,7 +13,7 @@ function GestionaleProject() {
                 <p>{t("projects.gestionale.description")}</p>
             </Col>
             <Col xs={12} sm={5} className="gestionale-project-image-column">
-                <img src={GestionaleTM} className="gestionale-project-image"/>
+                <img src={GestionaleTM} className="gestionale-project-image" alt="A screenshot of Gestionale"/>
             </Col>
         </Row>
     );
