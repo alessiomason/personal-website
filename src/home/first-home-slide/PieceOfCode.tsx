@@ -10,11 +10,12 @@ function PieceOfCode() {
 
     const [dirty, setDirty] = useState(false);
     const [time, setTime] = useState(dayjs().format());
-    const [spinner, setSpinner] = useState('|');
+    const [spinner, setSpinner] = useState<'|' | '/' | '-' | '\\'>('|');
     const [currentFestivity, setCurrentFestivity] = useState<Festivity>();
 
     useEffect(() => {
         const now = dayjs();
+        console.log(now.format());  // add current time in the console too
 
         for (const festivity of festivities) {
             if (dayjs(festivity.start).isBefore(now) && dayjs(festivity.end).isAfter(now)) {
