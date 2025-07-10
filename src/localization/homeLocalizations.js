@@ -51,6 +51,21 @@ const homeIt = {
                 "Lato amministrativo permette anche di gestire le commesse e calcolarne il costo in base alle ore lavorate, " +
                 "permette di visualizzare le ore lavorate aggregate per commessa, mese e dipendente, di pianificare le " +
                 "attività e gestire il piano ferie."
+        },
+        "fantanenbun": {
+            "subtitle": "Una web app per il Fanta del torneo di pallavolo del mio oratorio",
+            "description": "Tutti gli anni, a giugno, nel mio oratorio si tiene un torneo di pallavolo amatoriale, " +
+                "il Torneo dei Nen Bun. Da qualche anno ormai il torneo è arricchito dal FantaNenBun, una competizione " +
+                "a cui è possibile partecipare tramite questa web app. Ogni utente, iscrivendosi, è chiamato a " +
+                "scegliere tre squadre tra quelle partecipanti al torneo. Queste squadre guadagnano punti nel corso " +
+                "del torneo in base a fantasiosi bonus e malus: l'utente le cui squadre totalizzano più punti vince!"
+        },
+        "keepsmiling": {
+            "subtitle": "Un portale per la gestione delle iscrizioni ad un'associazione sportiva",
+            "description": "Un'applicazione web scritta in PHP che espone dei form di iscrizione ai vari programmi " +
+                "dell'associazione sportiva, con generazione di moduli di iscrizione precompilati inviati via email " +
+                "ed emissione delle ricevute di pagamento. Successivamente la sezione di amministrazione consente di " +
+                "gestire i partecipanti ai vari corsi e di visualizzare la documentazione inviata."
         }
     },
     "festivities-greetings": {
@@ -110,10 +125,28 @@ const homeEn = {
         "gestionale": {
             "subtitle": "A web application to manage personnel and register worked hours",
             "description": "Written in TypeScript using Express as a back-end framework and React for the front end, " +
-                "Gestionale allows to register worked hours, manage the company orders and assistance tickets. " +
-                "On the administrative side it allows to manage jobs and to calculate their cost based on the worked " +
+                "Gestionale allows you to register worked hours, manage the company orders and assistance tickets. " +
+                "On the administrative side it allows you to manage jobs and to calculate their cost based on the worked " +
                 "hours, to see the worked hours aggregated by job, month and employee, to plan the activities and to " +
                 "manage the holiday plan."
+        },
+        "fantanenbun": {
+            "subtitleIT": "Una web app per il Fanta del torneo di pallavolo del mio oratorio",
+            "subtitle": "A web app for a fantasy football-like competition held during the volleyball tournament " +
+                "organized by my parish",
+            "description": 'Every year in June, my parish holds an amateur volleyball tournament, the "Nen Bun" ' +
+                'Tournament. For a few years now, the tournament has been enriched with FantaNenBun, ' +
+                'a competition you can participate in via this web app. Each user, upon registration, is asked to ' +
+                'choose three teams from those participating in the tournament. These teams earn points throughout ' +
+                'the tournament based on imaginative bonuses and penalties: the user whose teams score ' +
+                'the most points wins!'
+        },
+        "keepsmiling": {
+            "subtitle": "A website for managing memberships for a sports association",
+            "description": "A web application written in PHP that displays registration forms for the sports " +
+                "association's various programs, generating pre-filled registration forms sent via email and " +
+                "issuing payment receipts. The administration section then allows you to manage the participants to the " +
+                "various courses and review the submitted documentation."
         }
     },
     "festivities-greetings": {
