@@ -11,6 +11,10 @@ function FirstHomeSlide() {
     const {t} = useTranslation();
     const isMobile = useMediaQuery({maxWidth: 767});
 
+    function scrollToSecondSlide() {
+        window.scrollTo({top: window.innerHeight, behavior: "smooth"});
+    }
+
     return (
         <div className="d-flex flex-column justify-content-center full-screen-slide first-home-slide">
             {!isMobile && <PieceOfCode/>}
@@ -28,7 +32,7 @@ function FirstHomeSlide() {
                 </Col>
             </Row>
 
-            <ArrowDown className="arrow-down"/>
+            <ArrowDown className="arrow-down" onClick={scrollToSecondSlide}/>
         </div>
     );
 }
