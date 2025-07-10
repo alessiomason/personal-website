@@ -19,7 +19,7 @@ function FlashwordProject() {
             <Col xs={6} sm={2} className={`d-flex justify-content-center ${isMobile ? "align-items-center" : ""}`}>
                 <img src={FlashwordIcon} className="flashword-project-icon" alt="Flashword's icon"/>
             </Col>
-            <Col xs={12} sm={4} className="flashword-text-box">
+            <Col xs={12} sm={5} className="flashword-text-box">
                 <h2>Flashword</h2>
                 <h5>{t("flashword.description.3")}</h5>
                 <p>{t("flashword.description.4")}</p>

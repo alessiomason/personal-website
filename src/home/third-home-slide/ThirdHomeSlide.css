@@ -12,6 +12,14 @@
     margin-bottom: 5rem;
 }
 
+.single-project-slide h5 {
+    margin-bottom: 1rem;
+}
+
+.single-project-slide p {
+    margin-bottom: 2rem;
+}
+
 @media (max-width: 767px) {
     .single-project-slide {
         margin-top: 1rem;

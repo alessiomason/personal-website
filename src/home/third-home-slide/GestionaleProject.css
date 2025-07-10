@@ -9,5 +9,6 @@
 @media (max-width: 767px) {
     .gestionale-project-image {
         width: 75vw;
+        transform: translate3d(-4vw, -5vh, 0) rotate(2deg) scale(1.1);
     }
 }
