@@ -101,7 +101,7 @@ const homeEn = {
             "2": "On <1>GitHub</1> you can find some of these projects and even the <3>repository</3> of this very website."
         },
     },
-    "across-the-spider-verse": "Across the Spider-Verse",
+    "across-the-spider-verse": "Across the Spider-Verse (the web)",
     "projects": {
         "title": "My projects",
         "subtitle": "Some of my works and personal projects",
