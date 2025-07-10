@@ -9,7 +9,7 @@ function Maintenance() {
     return (
         <div className="d-flex flex-column justify-content-center full-screen-slide maintenance-page">
             <div className="d-flex center-row no-padding">
-                <img src={Klink} className="klink" alt="loading"/>
+                <img src={Klink} className="klink" alt="The Pokémon Klink, spinning"/>
             </div>
 
             <div>

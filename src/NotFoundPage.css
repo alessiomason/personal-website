@@ -5,3 +5,9 @@
     background-size: 30px 30px, 30px 30px, 6px 6px, 6px 6px;
     background-position: -1.2000000000000002px -1.2000000000000002px, -1.2000000000000002px -1.2000000000000002px, -0.6000000000000001px -0.6000000000000001px, -0.6000000000000001px -0.6000000000000001px;
 }
+
+.klink {
+    min-width: 100px;
+    width: 8vw;
+    max-width: 200px;
+}
