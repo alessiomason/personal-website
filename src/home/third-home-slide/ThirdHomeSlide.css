@@ -65,22 +65,22 @@
     margin-top: 3rem;
 }
 
-.gestionale-project-text-column {
+.right-hand-side-project-text-column {
     text-align: right;
 }
 
 @media (max-width: 767px) {
-    .gestionale-project-text-column {
+    .right-hand-side-project-text-column {
         order: 1;
     }
 
-    .gestionale-project-image-column {
+    .right-hand-side-project-image-column {
         order: 0;
         display: flex;
         justify-content: center;
     }
 
-    .gestionale-project-image {
+    .right-hand-side-project-image {
         width: 70vw;
     }
 }

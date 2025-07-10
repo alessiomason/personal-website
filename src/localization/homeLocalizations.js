@@ -10,6 +10,7 @@ const homeIt = {
     "interests": "Interessi e competenze",
     "scroll-to-know-more": "Scorri i riquadri per saperne di più!",
     "show-more": "Scopri di più",
+    "visit-website": "Visita il sito",
     "web-applications": {
         "title": "Applicazioni web",
         "front-end": "Front end: React",
@@ -71,6 +72,7 @@ const homeEn = {
     },
     "scroll-to-know-more": "Scroll the boxes to get to know more!",
     "show-more": "Show more",
+    "visit-website": "Visit the website",
     "interests": "Interests and expertise",
     "web-applications": {
         "title": "Web applications",

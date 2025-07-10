@@ -1,6 +1,8 @@
 import {useTranslation} from "react-i18next";
 import FlashwordProject from "./FlashwordProject";
 import GestionaleProject from "./GestionaleProject";
+import FantaNenBunProject from "./FantaNenBunProject";
+import KeepSmilingProject from "./KeepSmilingProject";
 import "./ThirdHomeSlide.css";
 
 function ThirdHomeSlide() {
@@ -12,6 +14,8 @@ function ThirdHomeSlide() {
             <h5>{t("projects.subtitle")}</h5>
             <FlashwordProject/>
             <GestionaleProject/>
+            <FantaNenBunProject/>
+            <KeepSmilingProject/>
         </div>
     );
 }
