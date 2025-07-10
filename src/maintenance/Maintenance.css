@@ -1,13 +1,15 @@
 @import url(../Colors.css);
 
-.klink {
-	width: max-content;
-}
-
 .maintenance-page {
 	/* Pattern generated with https://www.magicpattern.design/tools/css-backgrounds */
 	background-color: var(--opaque-blue);
 	background-image: linear-gradient(var(--mid-blue) 1.2000000000000002px, transparent 1.2000000000000002px), linear-gradient(90deg, var(--mid-blue) 1.2000000000000002px, transparent 1.2000000000000002px), linear-gradient(var(--mid-blue) 0.6000000000000001px, transparent 0.6000000000000001px), linear-gradient(90deg, var(--mid-blue) 0.6000000000000001px, var(--opaque-blue) 0.6000000000000001px);
 	background-size: 30px 30px, 30px 30px, 6px 6px, 6px 6px;
 	background-position: -1.2000000000000002px -1.2000000000000002px, -1.2000000000000002px -1.2000000000000002px, -0.6000000000000001px -0.6000000000000001px, -0.6000000000000001px -0.6000000000000001px;
+}
+
+.klink {
+	min-width: 100px;
+	width: 8vw;
+	max-width: 200px;
 }

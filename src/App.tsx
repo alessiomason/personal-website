@@ -19,6 +19,7 @@ function App() {
 }
 
 function App2() {
+    const inMaintenance = process.env.REACT_APP_IN_MAINTENANCE === "true";
     const location = useLocation();
 
     useLayoutEffect(() => {
@@ -27,7 +28,7 @@ function App2() {
 
     return (
         <Routes>
-            <Route path="/" element={<PageLayout/>}>
+            <Route path="/" element={inMaintenance ? <Maintenance/> : <PageLayout/>}>
                 <Route index element={<Home/>}/>
                 <Route path="secret" element={<Secret/>}/>
 
