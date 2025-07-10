@@ -7,12 +7,12 @@ function GestionaleProject() {
 
     return (
         <Row className="single-project-slide">
-            <Col xs={6} className="text-end">
+            <Col xs={12} sm={6} className="gestionale-project-text-column">
                 <h2>Gestionale</h2>
                 <h5>{t("projects.gestionale.subtitle")}</h5>
                 <p>{t("projects.gestionale.description")}</p>
             </Col>
-            <Col xs={5}>
+            <Col xs={12} sm={5} className="gestionale-project-image-column">
                 <img src={GestionaleTM} className="gestionale-project-image"/>
             </Col>
         </Row>

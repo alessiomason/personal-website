@@ -10,13 +10,13 @@ function FlashwordProject() {
 
     return (
         <Row className="single-project-slide">
-            <Col>
+            <Col xs={12} sm={4} className="d-flex justify-content-center align-items-start">
                 <img src={Flashword} className="flashword-project-image"/>
             </Col>
-            <Col>
+            <Col xs={12} sm={2} className="d-flex justify-content-center">
                 <img src={FlashwordIcon} className="flashword-project-icon"/>
             </Col>
-            <Col xs={5} className="ms-5">
+            <Col xs={12} sm={4} className="flashword-text-box">
                 <h2>Flashword</h2>
                 <h5>{t("flashword.description.3")}</h5>
                 <p>{t("flashword.description.4")}</p>
