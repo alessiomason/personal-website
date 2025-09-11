@@ -19,7 +19,8 @@ function FlashwordPrivacyPolicy() {
                     <h1>{t("flashword.privacy-policy.title")}</h1>
                     <p>{t("flashword.privacy-policy.description.1")}</p>
                     <p>{t("flashword.privacy-policy.description.2")}</p>
-                    <p><Trans i18nKey="flashword.privacy-policy.description.3">For any question or comment regarding
+                    <p>{t("flashword.privacy-policy.description.3")}</p>
+                    <p><Trans i18nKey="flashword.privacy-policy.description.4">For any question or comment regarding
                         Flashword (and its privacy policy), you can contact me
                         at <a className="blue-link" href="mailto:alessiomason99@gmail.com">alessiomason99@gmail.com</a>.</Trans>
                     </p>
