@@ -22,7 +22,7 @@ function FlashwordPrivacyPolicy() {
                     <p>{t("flashword.privacy-policy.description.3")}</p>
                     <p><Trans i18nKey="flashword.privacy-policy.description.4">For any question or comment regarding
                         Flashword (and its privacy policy), you can contact me
-                        at <a className="blue-link" href="mailto:alessiomason99@gmail.com">alessiomason99@gmail.com</a>.</Trans>
+                        at <a className="blue-link" href="mailto:dev@alessiomason.it">dev@alessiomason.it</a>.</Trans>
                     </p>
                     <p>{t("flashword.privacy-policy.last-updated")}</p>
                 </Col>

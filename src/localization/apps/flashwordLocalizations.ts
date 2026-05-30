@@ -32,9 +32,9 @@ const flashwordIt = {
                 eseguito in locale, e non lasciano quindi in alcun momento il dispositivo. I dati non vengono
                 utilizzati per allenare alcun modello di intelligenza artificiale.`,
                 "4": `Per qualsiasi domanda o commento riguardo Flashword (e la sua privacy policy),
-                puoi contattarmi all'indirizzo <1>alessiomason99@gmail.com</1>.`
+                puoi contattarmi all'indirizzo <1>dev@alessiomason.it</1>.`
             },
-            "last-updated": "Ultimo aggiornamento: giovedì 11 settembre 2025",
+            "last-updated": "Ultimo aggiornamento: sabato 30 maggio 2026",
             "link": "<0>Privacy policy</0>",
         },
         "terms-of-use": {
@@ -42,9 +42,9 @@ const flashwordIt = {
             "description": {
                 "1": "Flashword è governata dall'<1>EULA Standard per le app di Apple</1>.",
                 "2": `Per qualsiasi domanda o commento riguardo Flashword (e i suoi termini di utilizzo),
-                puoi contattarmi all'indirizzo <1>alessiomason99@gmail.com</1>.`
+                puoi contattarmi all'indirizzo <1>dev@alessiomason.it</1>.`
             },
-            "last-updated": "Ultimo aggiornamento: giovedì 11 settembre 2025",
+            "last-updated": "Ultimo aggiornamento: sabato 30 maggio 2026",
             "link": "<0>Termini di utilizzo</0>",
         }
     }
@@ -83,9 +83,9 @@ const flashwordEn = {
                 by the user: the data are therefore shared with the Apple Intelligence model, which is run locally,
                 and so they never leave the device. Data are not used to train any artificial intelligence model.`,
                 "4": `For any question or comment regarding Flashword (and its privacy policy),
-                you can contact me at <1>alessiomason99@gmail.com</1>.`
+                you can contact me at <1>dev@alessiomason.it</1>.`
             },
-            "last-updated": "Last updated: Thursday, 11 September 2025",
+            "last-updated": "Last updated: Saturday, 30 May 2026",
             "link": "<0>Privacy policy</0>",
         },
         "terms-of-use": {
@@ -93,9 +93,9 @@ const flashwordEn = {
             "description": {
                 "1": "Flashword is governed by <1>Apple's Standard EULA for apps</1>.",
                 "2": `For any question or comment regarding Flashword (and its terms of use),
-                you can contact me at <1>alessiomason99@gmail.com</1>.`
+                you can contact me at <1>dev@alessiomason.it</1>.`
             },
-            "last-updated": "Last updated: Thursday, 11 September 2025",
+            "last-updated": "Last updated: Saturday, 30 May 2026",
             "link": "<0>Terms of use</0>",
         }
     }

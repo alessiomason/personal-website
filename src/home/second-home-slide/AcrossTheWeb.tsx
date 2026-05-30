@@ -1,7 +1,7 @@
 import {useTranslation} from "react-i18next";
 import {useInView} from "react-intersection-observer";
 import {useMediaQuery} from "react-responsive";
-import {Github, Mastodon, Threads} from "react-bootstrap-icons";
+import {EnvelopeAt, Github, Mastodon, Threads} from "react-bootstrap-icons";
 import "./SecondHomeSlideFooter.css";
 
 function AcrossTheWeb() {
@@ -20,6 +20,9 @@ function AcrossTheWeb() {
             </div>
             <div className={`d-flex ${isMobile ? "justify-content-center" : ""} align-items-center`}>
                 <Mastodon className="web-icon"/><a href="https://mastodon.social/@alemason">@alemason@mastodon.social</a>
+            </div>
+            <div className={`d-flex ${isMobile ? "justify-content-center" : ""} align-items-center`}>
+                <EnvelopeAt className="web-icon"/><a href="mailto:dev@alessiomason.it">dev@alessiomason.it</a>
             </div>
         </div>
     );

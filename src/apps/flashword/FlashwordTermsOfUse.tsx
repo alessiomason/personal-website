@@ -23,7 +23,7 @@ function FlashwordTermsOfUse() {
                         Apple's Standard EULA for apps</Link>.</Trans></p>
                     <p><Trans i18nKey="flashword.terms-of-use.description.2">For any question or comment regarding
                         Flashword (and its terms of use), you can contact me
-                        at <a className="blue-link" href="mailto:alessiomason99@gmail.com">alessiomason99@gmail.com</a>.</Trans>
+                        at <a className="blue-link" href="mailto:dev@alessiomason.it">dev@alessiomason.it</a>.</Trans>
                     </p>
                     <p>{t("flashword.terms-of-use.last-updated")}</p>
                 </Col>
