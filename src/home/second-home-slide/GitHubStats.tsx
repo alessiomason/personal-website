@@ -11,7 +11,7 @@ function GitHubStats() {
     return (
         <div ref={ref} className={`${isMobile ? "" : "mt-5"} github-stats ${(inView || isMobile ? "animate" : "no-animate")}`}>
             <a href="https://github.com/anuraghazra/github-readme-stats#gh-light-mode-only"><img alt="Most used languages graph"
-                src={`https://github-readme-stats.vercel.app/api/top-langs/?username=alessiomason&langs_count=10&layout=compact&theme=transparent&hide_border=true&title_color=ffd500&text_color=ffd500&locale=${language}#gh-light-mode-only`}/>
+                src={`https://github-readme-stats-five-nu-33.vercel.app/api/top-langs/?username=alessiomason&langs_count=10&layout=compact&theme=transparent&hide_border=true&title_color=ffd500&text_color=ffd500&locale=${language}#gh-light-mode-only`}/>
             </a>
         </div>
     );
