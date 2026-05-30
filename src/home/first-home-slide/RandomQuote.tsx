@@ -6,7 +6,7 @@ function RandomQuote() {
     const isMobile = useMediaQuery({maxWidth: 767});
 
     const lastShown = parseInt(sessionStorage.getItem("lastQuoteShown") ?? "-1");
-    let randomIndex = lastShown === -1 ? 0 : Math.floor(Math.random() * quotes.length);
+    let randomIndex = Math.floor(Math.random() * quotes.length);
     let randomQuote = quotes[randomIndex];
     while ((isMobile && randomQuote.quote.length > 180) || randomIndex === lastShown) {
         randomIndex = Math.floor(Math.random() * quotes.length);
