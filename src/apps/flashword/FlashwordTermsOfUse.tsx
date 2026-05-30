@@ -25,7 +25,7 @@ function FlashwordTermsOfUse() {
                         Flashword (and its terms of use), you can contact me
                         at <a className="blue-link" href="mailto:dev@alessiomason.it">dev@alessiomason.it</a>.</Trans>
                     </p>
-                    <p>{t("flashword.terms-of-use.last-updated")}</p>
+                    <p className="text-end"><em>{t("flashword.terms-of-use.last-updated")}</em></p>
                 </Col>
             </Row>
         </Container>
